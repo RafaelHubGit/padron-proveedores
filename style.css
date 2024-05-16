@@ -1,0 +1,21 @@
+/* Webkit browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+    width: 3px;  /* Width of vertical scrollbar */
+    height: 3px; /* Height of horizontal scrollbar */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent; /* Background of the scrollbar track */
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 1.5px; /* Roundness of the scrollbar thumb */
+  }
+  
+  /* Firefox */
+  body {
+    scrollbar-width: thin; /* Makes the scrollbar thin */
+    scrollbar-color: #ccc transparent; /* Thumb color and track color */
+  }
+  

@@ -1,14 +1,15 @@
 
 import { AppRouter } from './router/AppRouter'
 import { AuthProvider } from './auth'
+import { Router } from 'react-router-dom'
 
 
 export const App = () => {
   return (
     <AuthProvider>
-
-      <AppRouter/>
-      
+        {/* <Router> */}
+          <AppRouter/>
+        {/* </Router> */}
     </AuthProvider>
   )
 }

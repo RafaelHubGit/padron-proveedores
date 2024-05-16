@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import useDivHeight from '../hooks/useDivHeight';
+import { GeneralContext } from '../context/GeneralContext';
 
 export const Header = () => {
+
+  const [headerHeightRef, headerHeight] = useDivHeight();
+  const { setHeight } = useContext( GeneralContext );
+
+
+  useEffect(() => {
+    setHeight( 'header', headerHeight );
+  }, [headerHeight])
+
   return (
-    <div className="header">
+    <div ref={headerHeightRef} className="header ">
+      <div className="container-lg wrapped">
         <div className='header-title'>
             Padrón de Proveedores
         </div>
@@ -11,6 +23,7 @@ export const Header = () => {
             <p className='mail'> gonzalo.nava.1403@gmail.com</p>
             <a className='cerrar-sesion' href="#">Cerrar sesión</a>
         </div>
+      </div>
     </div>
   )
 }

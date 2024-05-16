@@ -21,11 +21,15 @@ p{
 .header{
     width: 100%;
     height: $header-height;
-    padding: 0px 25px 0px 25px;
     box-shadow: 0px 5px 15px -2px rgba(0,0,0,0.75);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    
+    .wrapped{
+        padding: 0px 25px 0px 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
+    }
     .header-title{
         display: flex;
         align-items: center;
@@ -39,14 +43,15 @@ p{
         justify-content: center;
         
         .nombre{
-            font-size: 18px;
+            font-size: 15px;
             font-weight: bold;
         }
         .mail{
-            font-size: 15px;
+            font-size: 12px;
         }
         .cerrar-sesion{
             color: $red-color;
+            font-size: 12px;
         }
     }
 }
@@ -58,3 +63,66 @@ p{
     height: calc(100vh - $header-height - 48px );
     border-radius: 20px;
 }
+
+
+
+.searchContainer{
+    border: solid 1px #ccc;
+    border-radius: 50px;
+    color: $primary-text;
+    padding: 3px;
+    height: 59px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+    input {
+        width: 95%;
+        height: 60%;
+        border: none;
+    }
+    input:focus {
+        outline: none;
+    }
+
+
+}
+
+
+// sirve para poner scroll en el tbody de la tablas
+.fixed_header{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    tbody{
+        display:block;
+        width: 100%;
+        overflow: auto;
+      }
+      
+      thead tr {
+         display: block;
+      }
+      
+      thead {
+        background: black;
+        color:#fff;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+        width: 300px;
+      }
+}
+
+
+  
+  
+  
+
+
+  

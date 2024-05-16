@@ -3,7 +3,9 @@ import React, { useContext } from 'react'
 import { AuthContext } from '../../auth';
 import { Header } from '../components/Header';
 import { CardGeneral } from '../components/CardGeneral';
-import { ProveedoresSearch } from '../components/ProveedoresSearch';
+// import { ProveedoresSearch } from '../components/ProveedoresSearch';
+import { GeneralProvider } from '../context/GeneralProvider';
+import { ProveedorDetalle } from '../components/proveedor detalle/ProveedorDetalle';
 
 
 
@@ -30,17 +32,18 @@ export const HomePage = () => {
   };
 
   return (
-    <>
-      {/* home page 
-      <p>Nombre de Usuario: {userName}</p>
-      <p>Email: {userEmail}</p>
-      <button onClick={handleLogout}>Cerrar Sesión</button> */}
+    <GeneralProvider>
       <Header />
 
       <CardGeneral className="container-md mt-4 cardGeneral ">
-        <ProveedoresSearch />
+        {/* <ProveedoresSearch /> */}
+        <ProveedorDetalle />
       </CardGeneral>
-    
-    </>
+
+    </GeneralProvider>
+      /* home page 
+      <p>Nombre de Usuario: {userName}</p>
+      <p>Email: {userEmail}</p>
+      <button onClick={handleLogout}>Cerrar Sesión</button> */
   )
 }
