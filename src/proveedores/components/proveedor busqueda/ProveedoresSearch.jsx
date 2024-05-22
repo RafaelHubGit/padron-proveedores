@@ -23,17 +23,19 @@ export const ProveedoresSearch = () => {
       };
 
   return (
-    <div className='row'>
-        <div ref={ searchContainerRef }  className='row mb-4 align-items-center'>
-            <div className='col-md-10 col-sm.12'>
-                <InputSearch onSearchTextChange={ handleSearchTextChange } />
+    <div className="container mt-4">
+        <div className='row'>
+            <div ref={ searchContainerRef }  className='row mb-4 align-items-center'>
+                <div className='col-md-10 col-sm.12'>
+                    <InputSearch onSearchTextChange={ handleSearchTextChange } />
+                </div>
+                <div className='col-md-2 col-sm-12 mt-sm-2 '>
+                    <button type="button" className="btn btn-success w-100">Nuevo</button>
+                </div>
             </div>
-            <div className='col-md-2 col-sm-12 mt-sm-2 '>
-                <button type="button" className="btn btn-success w-100">Nuevo</button>
+            <div className='' >
+                <ProveedorTable />
             </div>
-        </div>
-        <div className='' >
-            <ProveedorTable />
         </div>
     </div>
   )

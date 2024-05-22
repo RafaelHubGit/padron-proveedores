@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { GeneralContext } from '../../context/GeneralContext';
 import useDivHeight from '../../hooks/useDivHeight';
+import { useNavigate } from 'react-router-dom';
 
 export const ProveedorTable = () => {
 
+    const navigate = useNavigate();
     const [tBodyHeight, setTBodyHeight] = useState( 0 )
     const [tHeadRef, tHeadHeight] = useDivHeight();
     // poner el tamaño del body tabla en la tabla con su respectivo calc 
@@ -15,6 +17,10 @@ export const ProveedorTable = () => {
 
       console.log('el tamaño  : ', header, ', ', searchContainer, ', ', ', ', tHeadHeight, ' total : ', tBodyHeight);
     }, [heights, tHeadHeight])
+
+    const handleRowClick = () => {
+        navigate(`/home/detalle`);
+    };
     
 
   return (
@@ -31,104 +37,47 @@ export const ProveedorTable = () => {
                 </tr>
             </thead>
             <tbody className='table-group-divider' style={{ height: `calc(85vh - ${tBodyHeight}px)` }}>
-                <tr >
+            <tr
+                    onDoubleClick={() => handleRowClick()}
+                    style={{ cursor: 'pointer' }}
+                >
                     <th scope="row">1</th>
                     <td>ITF210513ABC</td>
                     <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
                     <td> <span className="badge text-bg-success">Activo</span>  </td>
                     <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
                 </tr>
-                <tr>
+                <tr
+                    onDoubleClick={() => handleRowClick()}
+                    style={{ cursor: 'pointer' }}
+                >
                     <th scope="row">1</th>
                     <td>ITF210513ABC</td>
                     <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
                     <td> <span className="badge text-bg-success">Activo</span>  </td>
                     <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
                 </tr>
-                <tr>
+                <tr
+                    onDoubleClick={() => handleRowClick()}
+                    style={{ cursor: 'pointer' }}
+                >
                     <th scope="row">1</th>
                     <td>ITF210513ABC</td>
                     <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
                     <td> <span className="badge text-bg-success">Activo</span>  </td>
                     <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
                 </tr>
-                <tr>
+                <tr
+                    onDoubleClick={() => handleRowClick()}
+                    style={{ cursor: 'pointer' }}
+                >
                     <th scope="row">1</th>
                     <td>ITF210513ABC</td>
                     <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
                     <td> <span className="badge text-bg-success">Activo</span>  </td>
                     <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
                 </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
+                
 
             </tbody>
         </table>

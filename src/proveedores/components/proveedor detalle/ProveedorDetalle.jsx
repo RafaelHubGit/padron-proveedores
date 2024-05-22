@@ -1,16 +1,25 @@
 import React from 'react'
 import { ProveedorDetalleRouter } from '../../../router/ProveedorDetalleRouter'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export const ProveedorDetalle = () => {
 
+    const navigate = useNavigate();
     const location = useLocation();
 
+    const handleBack = () => {
+        navigate(`/home/busqueda`);
+    }
+
   return (
-    <div className='proveedor-detalle-container'>
+    <div className='proveedor-detalle-container container-md mt-4 '>
         <div className='navigation-container mb-3'>
             <div className='back-button'>
-                <span className="material-symbols-outlined">
+                <span 
+                    style={{ cursor: 'pointer' }}
+                    className="material-symbols-outlined"
+                    onClick={ () => handleBack() }
+                >
                     arrow_back
                 </span>
             </div>

@@ -2,10 +2,11 @@ import { useMsal } from '@azure/msal-react';
 import React, { useContext } from 'react'
 import { AuthContext } from '../../auth';
 import { Header } from '../components/Header';
-import { CardGeneral } from '../components/CardGeneral';
+// import { CardGeneral } from '../components/CardGeneral';
 // import { ProveedoresSearch } from '../components/ProveedoresSearch';
 import { GeneralProvider } from '../context/GeneralProvider';
-import { ProveedorDetalle } from '../components/proveedor detalle/ProveedorDetalle';
+// import { ProveedorDetalle } from '../components/proveedor detalle/ProveedorDetalle';
+import { SearchDetalleRouter } from '../../router/SearchDetalleRouter';
 
 
 
@@ -35,10 +36,11 @@ export const HomePage = () => {
     <GeneralProvider>
       <Header />
 
-      <CardGeneral className="container-md mt-4 cardGeneral ">
+      {/* <CardGeneral className="container-md mt-4 cardGeneral "> */}
         {/* <ProveedoresSearch /> */}
-        <ProveedorDetalle />
-      </CardGeneral>
+        {/* <ProveedorDetalle /> */}
+      {/* </CardGeneral> */}
+      <SearchDetalleRouter />
 
     </GeneralProvider>
       /* home page 

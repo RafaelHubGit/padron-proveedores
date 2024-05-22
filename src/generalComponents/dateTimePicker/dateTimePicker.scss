@@ -1,0 +1,57 @@
+  
+/* MyDatePicker.css */
+
+.date-picker-container{
+
+  border: solid 1px $margin-color;
+  border-radius: 10px;
+  position: relative;
+  width: fit-content;
+  min-width: 157px;
+  margin: 3px 1px;
+  
+  .text{
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: #fff;
+
+    p {
+      font-size: 12px;
+      margin: 0px 8px;
+      background-color: $backGround-color;
+      color: $secondary-text;
+    }
+  }
+
+  .my-custom-date-picker{
+    
+    color: $primary-text;
+    .react-datetime-picker__wrapper {
+        border: 0px;
+        padding: 1px;
+        background-color: rgba(255, 255, 255, 0) !important; /* Cambia el color de fondo */
+      }
+      
+      .react-datetime-picker__inputGroup{
+        // background-color: red;
+        // margin-right: 10px;
+        margin: 0px 5px;
+      }
+      .react-datetime-picker__inputGroup__input {      
+        border: none !important; /* Elimina el borde */
+        outline: none !important; /* Elimina el borde de enfoque */
+      }
+      
+      .react-datetime-picker__inputGroup__divider {
+        padding: 0 5px !important; /* Añade padding alrededor de los divisores */
+      }
+      
+      .react-datetime-picker__calendar-button.react-datetime-picker__button {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        color: $primary-text;
+      }
+  }
+}

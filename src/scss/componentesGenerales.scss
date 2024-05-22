@@ -1,0 +1,152 @@
+
+
+.subir-documento-container{
+
+    border: dashed 2px rgb(3, 156, 216);
+    border-radius: 15px;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 12px;
+    color: $secondary-text;
+
+    padding: 8px;
+
+    p{
+        text-align: center;
+    }
+
+}
+
+
+.cardGeneral-red{
+  border: 2px $red-color solid !important;
+  p{
+    color: $red-color !important;
+
+  }
+}
+.cardGeneral{
+    border: 1px #ccc solid;
+    border-radius: 20px;
+    border-radius: 20px;
+    min-height: 100px;
+    padding: 15px;
+    position: relative;
+
+    .text-wrap{
+        position: absolute;
+        top: -8px;
+        left: 30px;
+        background-color: #fff;
+    
+        p {
+          font-size: 15px;
+          margin: 0px 8px;
+          background-color: $backGround-color;
+          color: $secondary-text;
+        }
+    }
+}
+
+// sirve para poner scroll en el tbody de la tablas
+// Ponerlo en la clase de la table
+// Se puede poner el height en el tbody
+.fixed_header{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    tbody{
+        display:block;
+        width: 100%;
+        overflow: auto;
+      }
+      
+      thead tr {
+         display: block;
+      }
+      
+      thead {
+        background: black;
+        color:#fff;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+        width: 300px;
+      }
+}
+
+
+// SELECT 
+// Sirve para que al expandir el select, la info no se pierda debajo de los demas componentes
+.css-1nmdiq5-menu{
+  z-index: 20 !important;
+}
+
+.select-wrap{
+  border: 1px solid $margin-color;
+  border-radius: 5px;
+  padding: 4px;
+  
+}
+
+.css-13cymwt-control{
+  border: 0px !important;
+}
+.css-t3ipsp-control {
+    outline: none;
+    box-shadow: 0px !important;
+    border: 0px !important;
+}
+
+.css-1i837h3-ValueContainer2{
+  height: 50px;
+  overflow: auto !important;
+}
+
+.downText{
+  font-size: 12px;
+  color: $secondary-text;
+  padding: 3px 10px;
+
+  .down-text-wrap{
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+  }
+}
+
+.css-1p3m7a8-multiValue{
+  width: fit-content;
+}
+
+.select-container{
+  font-size: 12px;
+  position: relative;
+  margin: 5px 0px;
+
+  .text-wrap{
+    position: absolute;
+    top: -8px;
+    left: 13px;
+    background-color: #fff;
+    z-index: 10;
+
+    p{
+      font-size: 12px;
+      margin: 0px 8px;
+      background-color: #fff;
+      color: #999999;
+    }
+  }
+}
+
+// FIN SELECT 

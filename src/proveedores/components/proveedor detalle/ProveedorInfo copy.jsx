@@ -23,97 +23,90 @@ export const ProveedorInfo = () => {
 
   return (
     <div className='proveedor-info-container mt-4 row'>
-        <div className='row mt-3'>
-            <div className="col-md-6">
-                <div className='fechas-container d-flex justify-content-evenly mb-4'>
-                    <DateTimePickerComponent
-                        titulo="Fecha de alta "
-                        setDate={handleDateChange}
-                    />
-                    <DateTimePickerComponent
-                        titulo="Fecha de refrendo "
-                        setDate={handleDateChange}
-                    />
-                </div>
-            </div>
-            <div className="col-md-6">
-                <div className='boton-wrap mb-3'>
-                    <button type="button" class="btn btn-primary w-100"> Nuevo Refrendo </button>
-                </div>
-            </div>
-        </div>
-        <div className="row mt-4">
-            <div className='col-md-6 repse-container mb-3'>
-                <div className='repse-document-wrap row h-100  '> 
-                    <div className="repse-wrap col-sm-6 col-md-6 d-flex flex-column justify-content-center ">
-                        <div className="form-check mb-3">
-                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                            <label className="form-check-label" htmlFor="flexCheckChecked">
-                                Es repse
-                            </label>
-                        </div>
+        <div className='row'>
+            <div className='col-md-6 col-sm-12 mb-4'>
+                <div className='repse-fecha-container '>
+                    <div className='fechas-container d-flex justify-content-between mb-4'>
                         <DateTimePickerComponent
-                            titulo="Fecha repse "
+                            titulo="Fecha de alta "
+                            setDate={handleDateChange}
+                        />
+                        <DateTimePickerComponent
+                            titulo="Fecha de refrendo "
                             setDate={handleDateChange}
                         />
                     </div>
-                    <div className=' col-sm-6 h-100 d-flex align-items-center'>
-                        <SubirDocumento/>
+                    <div className='repse-container mb-3'>
+                        <div className='repse-document-wrap row'>
+                            <div className="repse-wrap col-sm-12 col-md-6">
+                                <div className="form-check mb-3">
+                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                                    <label className="form-check-label" htmlFor="flexCheckChecked">
+                                        Es repse
+                                    </label>
+                                </div>
+                                <DateTimePickerComponent
+                                    titulo="Fecha repse "
+                                    setDate={handleDateChange}
+                                />
+                            </div>
+                            <div className='col-sm-12 col-md-6'>
+                                <SubirDocumento/>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="form-floating">
+                            <textarea 
+                                className="form-control" 
+                                placeholder="Leave a comment here" 
+                                id="floatingTextarea2" 
+                                style={{ height: '100px' }} // Usar el objeto de estilo en React
+                            ></textarea>
+                            <label htmlFor="floatingTextarea2">Observaciones</label>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="col-md-6">
-                <div className='tipo-giros-wrap mb-3'>
-                    <SelectComponent 
-                        options= {[
-                            { value: 'chocolate', label: 'Tipo Proveedor 1' },
-                            { value: 'strawberry', label: 'Tipo Proveedor 2' },
-                            { value: 'vanilla', label: 'Tipo Proveedor 3' }
-                        ]}
-                        title= "Tipo Proveedor"
-                    />
-                    <SelectComponent 
-                        title= "Giros Comerciales"
-                        closeMenuOnSelect={false}
-                        // defaultValue={[colourOptions[4], colourOptions[5]]}
-                        isMulti
-                        showSelected = {true}
-                        options= {[
-                            { value: 'chocolate', label: 'Tipo Proveedor 1' },
-                            { value: 'strawberry', label: 'Tipo Proveedor 2' },
-                            { value: 'vanilla', label: 'Tipo Proveedor 3' },
-                            { value: 'vanilla2', label: 'Tipo Proveedor 2' },
-                            { value: 'vanilla3', label: 'Tipo Proveedor 4' }
-                        ]}
-                    />
-                </div>
-            </div>
-        </div>
-
-        <div className="row mt-3">
-            <div className="col-md-6">
-                <div className="form-floating">
-                    <textarea 
-                        className="form-control" 
-                        placeholder="Leave a comment here" 
-                        id="floatingTextarea2" 
-                        style={{ height: '100px' }} // Usar el objeto de estilo en React
-                    ></textarea>
-                    <label htmlFor="floatingTextarea2">Observaciones</label>
-                </div>
-            </div>
-            <div className="col-md-6 ">
-                <div className='web-wrap h-100 d-flex align-items-center  mt-md-2'>
-                    <div className="form-floating w-100">
-                        <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                        <label htmlFor="floatingInput">Página Web</label>
+            <div className='col-md-6 col-sm-12' >
+                    <div className='boton-wrap mb-3'>
+                        <button type="button" class="btn btn-primary w-100"> Nuevo Refrendo </button>
                     </div>
-                </div>
+                    <div className='tipo-giros-wrap mb-3'>
+
+                        <SelectComponent 
+                            options= {[
+                                { value: 'chocolate', label: 'Tipo Proveedor 1' },
+                                { value: 'strawberry', label: 'Tipo Proveedor 2' },
+                                { value: 'vanilla', label: 'Tipo Proveedor 3' }
+                              ]}
+                              title= "Tipo Proveedor"
+                        />
+                        <SelectComponent 
+                            title= "Giros Comerciales"
+                            closeMenuOnSelect={false}
+                            // defaultValue={[colourOptions[4], colourOptions[5]]}
+                            isMulti
+                            showSelected = {true}
+                            options= {[
+                                { value: 'chocolate', label: 'Tipo Proveedor 1' },
+                                { value: 'strawberry', label: 'Tipo Proveedor 2' },
+                                { value: 'vanilla', label: 'Tipo Proveedor 3' },
+                                { value: 'vanilla2', label: 'Tipo Proveedor 2' },
+                                { value: 'vanilla3', label: 'Tipo Proveedor 4' }
+                              ]}
+                        />
+                    </div>
+                    <div className='web-wrap d-flex align-items-center mb-3 mt-5'>
+                        <div className="form-floating w-100">
+                            <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+                            <label htmlFor="floatingInput">Página Web</label>
+                        </div>
+                    </div>
             </div>
         </div>
-
-        <div className="row mt-4">
-            <div className="col-md-6">
+        <div className='row'>
+            <div className='col-md-6'>
                 <div className="form-check mb-3">
                     <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                     <label className="form-check-label" htmlFor="flexCheckChecked">
@@ -147,7 +140,7 @@ export const ProveedorInfo = () => {
                     </CardGeneral>
                 </div>
             </div>
-            <div className="col-md-6 mt-5">
+            <div className='col-md-6 mt-5'>
                 <CardGeneral
                         title="Dirección"
                     >
@@ -155,9 +148,9 @@ export const ProveedorInfo = () => {
                 </CardGeneral>
             </div>
         </div>
-        
+
         <div className="row mt-5">
-            <div className="col-md-6">
+            <div className='col-md-6'>
                 <CardGeneral
                     title="Representantes"
                 >
@@ -181,8 +174,7 @@ export const ProveedorInfo = () => {
                     />
                 </CardGeneral>
             </div>
-
-            <div className="col-md-6">
+            <div className='col-md-6'>
                 <CardGeneral
                     title="Contacto"
                 >
@@ -208,22 +200,18 @@ export const ProveedorInfo = () => {
             </div>
         </div>
 
-        <div className="row mt-5">
-            <div className="col-md-12">
-                <CardGeneral
-                    title='Inactivar'
-                    className='cardGeneral-red'
-                >
-                    <InactivarSectionComponent />
-                </CardGeneral>
-            </div>
+        <div className='mt-5'>
+            <CardGeneral
+                title='Inactivar'
+                className='cardGeneral-red'
+            >
+                <InactivarSectionComponent />
+            </CardGeneral>
         </div>
 
         <div className='w-100 mt-5'>
             <button type="button" className="btn btn-success w-100">Guardar</button>
         </div>
-
-
     </div>
   )
 }
