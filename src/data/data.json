@@ -1,0 +1,1593 @@
+{
+    "Proveedores":[
+        {
+            "idProveedor":240,
+            "numero_proveedor":8660,
+            "fecha_alta":"2022-12-23",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-07-31",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":240,
+                    "idProveedor":240,
+                    "idrefrendo":1,
+                    "iddomicilio":240,
+                    "rfc":"AAAM780312B42  ",
+                    "razon_social":"MANUEL AYALA AMADOR                                                                                                                                                                                     ",
+                    "observaciones":"PRESTACION DE SERVICIO DE ESTACIONAMIENTO Y PENSION PARA AUTOS                                                                                        ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-07-31",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":1,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-07-31",
+                            "fecha_registro":"2023-07-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":240,\"calle\":\"CALLE REPUBLICA DE CUBA NUMERO 2 ESTACIONAMIENTO\",\"colonia\":\"CENTRO DE LA  AREA 2\",\"codigo_postal\":6010,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"CUAUHTEMOC CIUDAD DE MEXICO\",\"fecha_registro\":\"2023-07-31\",\"usuario_registra\":\"migracion\"}",
+                    "Contacto":[
+                        {
+                            "idcontacto":589,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5540944857",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":590,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"estacionamientomex@gmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"ARRENDAMIENTO DE INMUEBLES Y EQUIPO DE TRANSPORTE",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":241,
+            "numero_proveedor":8659,
+            "fecha_alta":"2022-12-22",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-05-30",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":241,
+                    "idProveedor":241,
+                    "idrefrendo":2,
+                    "iddomicilio":241,
+                    "rfc":"VAI1409222H1   ",
+                    "razon_social":"VAINDEC SA DE CV                                                                  ",
+                    "observaciones":"SERVICIOS DE CONSULTORIA EN COMPUTACIÓN                                                                                                               ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-05-30",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":2,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-05-30",
+                            "fecha_registro":"2023-05-30",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":241,\"calle\":\"CALLE VOLCAN NUMERO 150 INTERIOR 500\",\"colonia\":\"LOMAS DE CHAPULTEPEC V SECCION\",\"codigo_postal\":11000,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO\",\"fecha_registro\":\"2023-05-30\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":345,
+                            "tipo_representante":"Legal",
+                            "nombre":"JORGE HERNANDEZ MARTINEZ",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":344,
+                            "tipo_representante":"Ventas",
+                            "nombre":"ARMANDO FLORES OLMOS",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":591,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"ventas@vaindecsa.com.mx",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        },
+                        {
+                            "idcontacto":592,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"auxjuridico@serviciosaf.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        },
+                        {
+                            "idcontacto":593,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"juridico@serviciosaf.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"EQUIPO DE COMPUTO, SOFTWARE Y TELECOMUNICACIONES",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"INSUMOS Y REFACCIONES PARA EQUIPO DE COMPUTO, BIENES INFORMATICOS Y CONSUMIBLES ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"SERVICIO DE CONSULTORIAS, ASESORIAS E INVESTIGACIONES",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":242,
+            "numero_proveedor":8658,
+            "fecha_alta":"2022-12-22",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-06-05",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":242,
+                    "idProveedor":242,
+                    "idrefrendo":3,
+                    "iddomicilio":242,
+                    "rfc":"BUR140220RW5   ",
+                    "razon_social":"BURCH SA DE CV                                                                                                                                                                                          ",
+                    "observaciones":"ESTUDIO PROYECTO DISEÑO ADMINISTRACION SUPERVISION MANTENIMIENTO CONSERVACION RESTAURACION CONSTRUCCION TODA OBRA ARQUITECTONICA O DE INGENIERIA      ",
+                    "sitio_web":"burch.com.mx                  ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-06-05",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":3,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-06-05",
+                            "fecha_registro":"2023-06-05",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":242,\"calle\":\"CALLE PLATEROS NUMERO 7 INTERIOR CUARTO PISO\",\"colonia\":\"SAN JOSE INSURGENTES\",\"codigo_postal\":3900,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"BENITO JUAREZ\",\"fecha_registro\":\"2023-06-05\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":347,
+                            "tipo_representante":"Legal",
+                            "nombre":"FABIAN ALEJANDRO FERNANDEZ MONTIEL",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":348,
+                            "tipo_representante":"Legal",
+                            "nombre":"DAVID FLORES MARTINEZ",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":346,
+                            "tipo_representante":"Ventas",
+                            "nombre":"ALBERTO TRINIDAD CRUZ",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":594,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5534663407",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":595,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"a.fernandez@burch.com.mx",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"MANTENIMIENTO A INMUEBLES, CONSTRUCCION Y REMODELACION  ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"MATERIALES PARA LA CONSTRUCCION Y FERRETERIA EN GENERAL ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"EQUIPO DE SEGURIDAD Y MANTENIMIENTO ",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":244,
+            "numero_proveedor":8656,
+            "fecha_alta":"2022-12-15",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-07-26",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":244,
+                    "idProveedor":244,
+                    "idrefrendo":4,
+                    "iddomicilio":244,
+                    "rfc":"CTM150910NF4   ",
+                    "razon_social":"CIRCULO TECNOLOGICO DE MEXICO, S.A. DE C.V.\r\n                                                                                                                                                            ",
+                    "observaciones":"COMERCIO AL POR MAYOR DE EQUIPO Y ACESORIOS DE COMPUTO SERVICIOS EN COMPUTACION Y TRABAJOS ESPECIALIZADOS INSTALACION MTTO DE REDES LAN WAN BACK BONE ",
+                    "sitio_web":"www.cirtec.mx                 ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-07-26",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":4,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-07-26",
+                            "fecha_registro":"2023-07-26",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":244,\"calle\":\"AVENIDA JORGE JIMENEZ CANTU EXTERIOR SN INTERIOR TORRE 5 A DESPACHO 312\",\"colonia\":\"HACIENDA DE VALLE ESCONDIDO ATIZAPAN DE ZARAGOZA ESTADO DE MEXICO\",\"codigo_postal\":52937,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-07-26\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":352,
+                            "tipo_representante":"Legal",
+                            "nombre":"RODRIGO IZARRARAS PEREZ",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":351,
+                            "tipo_representante":"Ventas",
+                            "nombre":"ULISES JAVIER CHAVEZ MONDRAGON",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":599,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5546097188",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":600,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"rodrigoi@cirtec.mx",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"EQUIPO DE COMPUTO, SOFTWARE Y TELECOMUNICACIONES",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"INSUMOS Y REFACCIONES PARA EQUIPO DE COMPUTO, BIENES INFORMATICOS Y CONSUMIBLES ",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":246,
+            "numero_proveedor":8654,
+            "fecha_alta":"2022-12-13",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-09-04",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":246,
+                    "idProveedor":246,
+                    "idrefrendo":5,
+                    "iddomicilio":246,
+                    "rfc":"GSE120228UL7   ",
+                    "razon_social":"GUZDAN SERVICES, SA DE CV                                                                                                                                                                               ",
+                    "observaciones":"DISEÑO DESARROLLO GESTION  DE SISTEMAS DE INFORMACION BASADOS EN LA TECNOLOGIA DE LA INFORMACION SERVICIOS DE ASESORIA MTTO SOFTWARE HARDWARE EQUIPOS ",
+                    "sitio_web":"www.guzdan.com.mx             ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-09-04",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":5,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-05-26",
+                            "fecha_registro":"2023-09-04",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":246,\"calle\":\"CALLE LAGO ALBERTO NUMERO 442 INTERIOR TORRE A OFICINA 304\",\"colonia\":\"ANAHUAC I SECCION\",\"codigo_postal\":11320,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO\",\"fecha_registro\":\"2023-09-04\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":356,
+                            "tipo_representante":"Legal",
+                            "nombre":"LUIS EDGAR GUZMAN TERRAZAS",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":357,
+                            "tipo_representante":"Legal",
+                            "nombre":"NADIA GUZMAN TERRAZAS",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":355,
+                            "tipo_representante":"Ventas",
+                            "nombre":"FRANCISCO ABRAHAM DÍAZ TORRES",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":603,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5532281696",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":604,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5513700558",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":605,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5637191569",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":606,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"abraham.diaz@guzdan.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"EQUIPO DE COMPUTO, SOFTWARE Y TELECOMUNICACIONES",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"INSUMOS Y REFACCIONES PARA EQUIPO DE COMPUTO, BIENES INFORMATICOS Y CONSUMIBLES ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"MATERIALES, UTILES, EQUIPO DE OFICINA Y PAPELERIA",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"MANTENIMIENTO Y CONSERVACION DE BIENES INFORMATICOS ",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":247,
+            "numero_proveedor":8653,
+            "fecha_alta":"2022-12-13",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-05-18",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":247,
+                    "idProveedor":247,
+                    "idrefrendo":6,
+                    "iddomicilio":247,
+                    "rfc":"CAGG500324NX9  ",
+                    "razon_social":"JOSE GABRIEL CASTILLO GARCIA                                                                                                                                                                            ",
+                    "observaciones":"PERIODICO DIGITAL NUEVO MEXICO PLURAL ES UN DIARIO DIGITAL QUE OFRECE INFORMACION GENERAL DE LA SOCIEDAD                                              ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-05-18",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":6,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-05-18",
+                            "fecha_registro":"2023-05-18",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":247,\"calle\":\"ISLA DE ENMEDIO NUMERO 29\",\"colonia\":\"PRADO VALLEJO TLALNEPANTLA DE BAZ ESTADO DE MEXICO\",\"codigo_postal\":54170,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-05-18\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":358,
+                            "tipo_representante":"Ventas",
+                            "nombre":"CARLOS ALTENBURG RODRIGUEZ BAZAN",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":607,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5527996648",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":608,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"jose.gabriel.castillo24@gmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"BIENES IMPRESOS ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"ARTICULOS PROMOCIONALES Y SERVICIOS PUBLICITARIOS",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":248,
+            "numero_proveedor":8652,
+            "fecha_alta":"2022-12-13",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-03-03",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":248,
+                    "idProveedor":248,
+                    "idrefrendo":7,
+                    "iddomicilio":248,
+                    "rfc":"AAGA8403021B1  ",
+                    "razon_social":"ARTURO ALFARO GALAN                                                                                                                                                                                     ",
+                    "observaciones":"OTROS SERVICIOS DE PUBLICIDAD                                                                                                                         ",
+                    "sitio_web":"www.alcancediario.mx          ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-03-03",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":7,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-03-03",
+                            "fecha_registro":"2023-03-03",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":248,\"calle\":\"CALLE ZACAPOAXTLA NUMERO 120 INTERIOR CASA 3\",\"colonia\":\"GRANJAS DEL SUR PUEBLA PUEBLA\",\"codigo_postal\":72470,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-03-03\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":359,
+                            "tipo_representante":"Ventas",
+                            "nombre":"ARTURO ALFARO GALAN",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":609,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"2227080890",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":610,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"alfarogalan@alcancediario.mx",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"BIENES IMPRESOS ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"ARTICULOS PROMOCIONALES Y SERVICIOS PUBLICITARIOS",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":249,
+            "numero_proveedor":8651,
+            "fecha_alta":"2022-12-13",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-05-31",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":249,
+                    "idProveedor":249,
+                    "idrefrendo":8,
+                    "iddomicilio":249,
+                    "rfc":"PAGA790627R4A  ",
+                    "razon_social":"ANGELICA JOSEFINA PATIÑO GUEVARA                                                                                                                                                                        ",
+                    "observaciones":"EMPRESA CON CREACION Y DIFUSION DE CONTENIDO EXCLUSIVAMENTE A TRAVES DE INTERNET PORTAL DE NOTICIAS QUE COMUNICA CON PRESTIGIO LIBERTAD Y VERACIDAD   ",
+                    "sitio_web":"espaciolibrepuebla.com        ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-05-31",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":8,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-05-31",
+                            "fecha_registro":"2023-05-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":249,\"calle\":\"CALLE CORDILLERA DE LOS ALPES NUMERO 2428\",\"colonia\":\"MARAVILLAS PUEBLA PUEBLA\",\"codigo_postal\":72220,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-05-31\",\"usuario_registra\":\"migracion\"}",
+                    "Contacto":[
+                        {
+                            "idcontacto":611,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"2223330104",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":612,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"2226605758",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":613,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"ajpatino@gmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"OTRO",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":251,
+            "numero_proveedor":8649,
+            "fecha_alta":"2022-12-08",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-07-05",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":251,
+                    "idProveedor":251,
+                    "idrefrendo":9,
+                    "iddomicilio":251,
+                    "rfc":"PSP790613UG9   ",
+                    "razon_social":"CIA PERIODISTICA EL SOL DE PUEBLA, S.A. DE C.V.                                                                                                                                                         ",
+                    "observaciones":"EDICION DE PERIODICOS INTEGRADA CON LA IMPRESION                                                                                                      ",
+                    "sitio_web":"www.elsoldepuebla.com.mx      ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-07-05",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":9,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-07-05",
+                            "fecha_registro":"2023-07-05",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":251,\"calle\":\"CALLE 3 ORIENTE NUMERO 201\",\"colonia\":\"CENTRO PUEBLA PUEBLA\",\"codigo_postal\":72000,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-07-05\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":363,
+                            "tipo_representante":"Legal",
+                            "nombre":"SERAFIN SALAZAR ARELLANO",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":362,
+                            "tipo_representante":"Ventas",
+                            "nombre":"JORGE IVAN ZAMORA MARTINEZ",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":617,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"2224555947",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":618,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"ssalazar@elsoldepuebla.com.mx",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"ARTICULOS PROMOCIONALES Y SERVICIOS PUBLICITARIOS",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":252,
+            "numero_proveedor":8648,
+            "fecha_alta":"2022-12-08",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-05-31",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":252,
+                    "idProveedor":252,
+                    "idrefrendo":10,
+                    "iddomicilio":252,
+                    "rfc":"DAJT800717GLA  ",
+                    "razon_social":"TANIA YONUHEN DAMIAN JIMENEZ\r\n                                                                                                                                                                           ",
+                    "observaciones":"PUBLICACION DE NOTICIAS Y BANNERS PUBLICITARIOS A TRAVES DE UNA PÁGINA WEB                                                                            ",
+                    "sitio_web":"www.angulo7.com.mx            ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-05-31",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":10,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-05-31",
+                            "fecha_registro":"2023-05-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":252,\"calle\":\"CALLE CHOPO NUMERO 110 INTERIOR PISO 3 DEPTO 4\",\"colonia\":\"JESUS GONZALEZ ORTEGA HEROICA PUEBLA DE ZARAGOZA PUEBLA\",\"codigo_postal\":72040,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-05-31\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":364,
+                            "tipo_representante":"Ventas",
+                            "nombre":"TANIA YONUHEN DAMIAN JIMENEZ",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":619,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"2221019248",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":620,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"taniadamian7@gmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        },
+                        {
+                            "idcontacto":621,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"noticiasangulo7@gmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"ARTICULOS PROMOCIONALES Y SERVICIOS PUBLICITARIOS",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":253,
+            "numero_proveedor":8647,
+            "fecha_alta":"2022-12-08",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-03-29",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":253,
+                    "idProveedor":253,
+                    "idrefrendo":11,
+                    "iddomicilio":253,
+                    "rfc":"HOLN000623JE8  ",
+                    "razon_social":"NATALIE HOYOS LOPEZ                                                                                                                                                                                     ",
+                    "observaciones":"EDICION DE REVISTAS Y OTRAS PUBLICACIONES PERIODICAS INTEGRADA CON LA IMPRESION Y CREACION Y DIFUSION DE CONTENIDO EXCLUSIVAMENTE A TRAVES DE INTERNET",
+                    "sitio_web":"www.enlacenoticias.com.mx     ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-03-29",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":11,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-03-29",
+                            "fecha_registro":"2023-03-29",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":253,\"calle\":\"CALLE ALLENDE NUMERO 16 A\",\"colonia\":\"CENTRO\",\"codigo_postal\":74400,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"IZUCAR DE MATAMOROS PUEBLA\",\"fecha_registro\":\"2023-03-29\",\"usuario_registra\":\"migracion\"}",
+                    "Contacto":[
+                        {
+                            "idcontacto":622,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"2222806178",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":623,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"2212670958",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":624,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"natalia_lopez_solano@hotmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"OTRO",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":254,
+            "numero_proveedor":8646,
+            "fecha_alta":"2022-12-06",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-07-27",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":254,
+                    "idProveedor":254,
+                    "idrefrendo":12,
+                    "iddomicilio":254,
+                    "rfc":"LME190520V18   ",
+                    "razon_social":"LABORATORIOS MECCH, SA DE CV                                                                                                                                                                            ",
+                    "observaciones":"COMERCIO AL POR MAYOR DE PRODUCTOS FARMACEUTICOS                                                                                                      ",
+                    "sitio_web":"laboratoriosmecch.com         ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-07-27",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":12,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-07-27",
+                            "fecha_registro":"2023-07-27",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":254,\"calle\":\"CALLE BOSQUE DE OMBUES NUMERO 187\",\"colonia\":\"BOSQUE DE LAS LOMAS\",\"codigo_postal\":11700,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO\",\"fecha_registro\":\"2023-07-27\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":366,
+                            "tipo_representante":"Legal",
+                            "nombre":"DAFNI HARIANA VARGAS MORA",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":365,
+                            "tipo_representante":"Ventas",
+                            "nombre":"ARIANA PATRICIA GONZALEZ LOPEZ",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":625,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5580186569",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":626,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5516422635",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":627,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"ventas@laboratoriosmecch.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        },
+                        {
+                            "idcontacto":628,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"nancy.cley@laboratoriosmecch.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"MEDICINAS, PRODUCTOS FARMACEUTICOS Y DE LABORATORIO ",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":255,
+            "numero_proveedor":8645,
+            "fecha_alta":"2022-12-05",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-03-24",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":255,
+                    "idProveedor":255,
+                    "idrefrendo":13,
+                    "iddomicilio":255,
+                    "rfc":"GURJ621019RQ8  ",
+                    "razon_social":"JUAN MARTIN GUERRERO ROJAS                                                                                                                                                                              ",
+                    "observaciones":"TRANSCRIPCION Y SONORIZACION DE EVENTOS                                                                                                               ",
+                    "sitio_web":"estenografia.com.mx           ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-03-24",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":13,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-03-24",
+                            "fecha_registro":"2023-03-24",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":255,\"calle\":\"CALLE SUR 89 NUMERO 235 INTERIOR 5\",\"colonia\":\"CACAMA\",\"codigo_postal\":9450,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"IZTAPALAPA\",\"fecha_registro\":\"2023-03-24\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":367,
+                            "tipo_representante":"Ventas",
+                            "nombre":"JUAN MARTIN GUERRERO ROJAS",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":629,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5552170353",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":630,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"martinguerrero62@hotmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"OTRO",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":257,
+            "numero_proveedor":8643,
+            "fecha_alta":"2022-11-30",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-05-25",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":257,
+                    "idProveedor":257,
+                    "idrefrendo":14,
+                    "iddomicilio":257,
+                    "rfc":"AIN0308149J1   ",
+                    "razon_social":"AQUA INTERACTIVE, S DE RL DE CV                                                                                                                                                                         ",
+                    "observaciones":"VENTA ARRENDAMIENTO LICENCIAMIENTO DE SOLUCIONES COMPUTACIONALES O INFORMATICAS SOFTWARE APLICATIVO\/OPERATIVO ASESORIA INSTRUCCION CAPACITACION CURSOS",
+                    "sitio_web":"www.aquainteractive.com       ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-05-25",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":14,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-05-25",
+                            "fecha_registro":"2023-05-25",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":257,\"calle\":\"CALLE SENECA NUMERO EXTERIOR 134  INTERIOR PISO 3 OFICINA C COLONIA POLANCO CHAPULTEPEC\",\"colonia\":\"\",\"codigo_postal\":0,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO  11560\",\"fecha_registro\":\"2023-05-25\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":371,
+                            "tipo_representante":"Legal",
+                            "nombre":"NASHIA SANCHEZ RAMIREZ",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":370,
+                            "tipo_representante":"Ventas",
+                            "nombre":"RAMON MONDRAGON SOTELO",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":633,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5585965749",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":634,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5539675763",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":635,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"ventas@aquainteractive.com.mx",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        },
+                        {
+                            "idcontacto":636,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"nashia@aquainteractive.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"EQUIPO DE COMPUTO, SOFTWARE Y TELECOMUNICACIONES",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"SERVICIO DE CAPACITACION",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"SERVICIO DE CONSULTORIAS, ASESORIAS E INVESTIGACIONES",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":258,
+            "numero_proveedor":8642,
+            "fecha_alta":"2022-11-29",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-05-29",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":258,
+                    "idProveedor":258,
+                    "idrefrendo":15,
+                    "iddomicilio":258,
+                    "rfc":"SDI191108FG9   ",
+                    "razon_social":"SERVICIO DE DISEÑO E IMPRESION METROPOLITANO, S.A. DE C.V.                                                                                                                                              ",
+                    "observaciones":"ADQUISICION Y EXPLOTACION DE TODA CLASE DE EMPRESAS LIBRERAS EDITORIALES TIPOGRAFICAS DE CINE Y TELEVISION                                            ",
+                    "sitio_web":"lajornadahidalgo.com          ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-05-29",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":15,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-05-29",
+                            "fecha_registro":"2023-05-29",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":258,\"calle\":\"CALLE PLAZA JUAREZ NUMERO 124 INTERIOR PISO COMERCIAL 2\",\"colonia\":\": CENTRO PACHUCA DE SOTO HIDALGO\",\"codigo_postal\":42000,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-05-29\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":373,
+                            "tipo_representante":"Legal",
+                            "nombre":"PAOLA ABUADILI GARZA",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":374,
+                            "tipo_representante":"Legal",
+                            "nombre":"FABIOLA GONZALEZ CEBALLOS",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":372,
+                            "tipo_representante":"Ventas",
+                            "nombre":"FABIOLA GONZALEZ CEBALLOS",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":637,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5529606416",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":638,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5537198021",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":639,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"fabiola.gonzalez@hidalgo.jornada.com.mx",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        },
+                        {
+                            "idcontacto":640,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"victor.juarez@estadodemexico.jornada.com.mx",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"BIENES IMPRESOS ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"ARTICULOS PROMOCIONALES Y SERVICIOS PUBLICITARIOS",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"OTRO",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":259,
+            "numero_proveedor":8641,
+            "fecha_alta":"2022-11-29",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-04-04",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":259,
+                    "idProveedor":259,
+                    "idrefrendo":16,
+                    "iddomicilio":259,
+                    "rfc":"IID090904QV8   ",
+                    "razon_social":"INGENIERIA IDEOLOGICA, S.C.                                                                                                                                                                             ",
+                    "observaciones":"SERVICIOS DE CREACION Y DIFUSION DE CONTENIDO A TRAVES DE INTERNET SERVICIOS DE DISEÑO GRAFICO SERVICIOS DE CONSULTORIA EN ADMINISTRACION DE NEGOCIOS ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-04-04",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":16,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-04-04",
+                            "fecha_registro":"2023-04-04",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":259,\"calle\":\"CALLE 107 PONIENTE NUMERO 314\",\"colonia\":\"INF LOMA BELLA PUEBLA PUEBLA\",\"codigo_postal\":72490,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-04-04\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":376,
+                            "tipo_representante":"Legal",
+                            "nombre":"ELBA BEATRIZ RODRIGUEZ REYNOSO",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":375,
+                            "tipo_representante":"Ventas",
+                            "nombre":"ELBA BEATRIZ RODRIGUEZ REYNOSO",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":641,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"2221890536",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":642,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"2221890536",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":643,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"ingenieriaideologica@gmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"ARTICULOS PROMOCIONALES Y SERVICIOS PUBLICITARIOS",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"OTRO",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":260,
+            "numero_proveedor":8640,
+            "fecha_alta":"2022-11-29",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-05-25",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":260,
+                    "idProveedor":260,
+                    "idrefrendo":17,
+                    "iddomicilio":260,
+                    "rfc":"TDE171130E30   ",
+                    "razon_social":"TIC DEFENSE, SA DE CV                                                                                                                                                                                   ",
+                    "observaciones":"DISEÑO DESARROLLO COMERCIALIZACION DE PRODUCTOS Y SERVICIOS DE TECNOLOGIAS Y DERIVADOS  DE SEGURIDAD DE INFORMACION CIBERSEGURIDAD PERITAJE DIGITAL   ",
+                    "sitio_web":"www.ticdefense.com            ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-05-25",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":17,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-05-25",
+                            "fecha_registro":"2023-05-25",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":260,\"calle\":\"CALLE SENECA NUMERO 134 INTERIOR PISO 3\",\"colonia\":\"POLANCO CHAPULTEPEC\",\"codigo_postal\":11560,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO\",\"fecha_registro\":\"2023-05-25\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":378,
+                            "tipo_representante":"Legal",
+                            "nombre":"VALERIA GIORDANO TURRUBIARTE",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":377,
+                            "tipo_representante":"Ventas",
+                            "nombre":"VALERIA GIORDANO TURRUBIARTE",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":644,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5529152865",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":645,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5529152865",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"EQUIPO DE COMPUTO, SOFTWARE Y TELECOMUNICACIONES",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"SERVICIO DE CONSULTORIAS, ASESORIAS E INVESTIGACIONES",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":261,
+            "numero_proveedor":8639,
+            "fecha_alta":"2022-11-29",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-03-03",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":261,
+                    "idProveedor":261,
+                    "idrefrendo":18,
+                    "iddomicilio":261,
+                    "rfc":"PRN190214EM9   ",
+                    "razon_social":"PUBLICIDAD RN-SM SA DE CV                                                                                                                                                                               ",
+                    "observaciones":"PRODUCTOS PUBLICITARIOS Y COMERCIALES CUALQUIER ELEMENTO TECNICO DE IMPRESION PARA REALIZACION DE SERVICIOS PUBLICITARIOS MERCADOTECNIA ASESORIA PROMO",
+                    "sitio_web":"www.rn-sm.media               ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-03-03",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":18,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-03-01",
+                            "fecha_registro":"2023-03-03",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":261,\"calle\":\"AVENIDA NUEVO LEON NUMERO 276 INTERIOR 701\",\"colonia\":\"HIPODROMO\",\"codigo_postal\":6100,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"CUAUHTEMOC\",\"fecha_registro\":\"2023-03-03\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":380,
+                            "tipo_representante":"Legal",
+                            "nombre":"FRANCISCO RODOLFO NAVARRETE GARCES",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":379,
+                            "tipo_representante":"Ventas",
+                            "nombre":"FRANCISCO RODOLFO NAVARRETE GARCES",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":646,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5516896742",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":647,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5522404392",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"SERVICIO DE EVENTOS Y BANQUETES ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"ARTICULOS PROMOCIONALES Y SERVICIOS PUBLICITARIOS",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"SERVICIO DE CAPACITACION",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":263,
+            "numero_proveedor":8637,
+            "fecha_alta":"2022-11-24",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-03-03",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":263,
+                    "idProveedor":263,
+                    "idrefrendo":19,
+                    "iddomicilio":263,
+                    "rfc":"OAI161214M17   ",
+                    "razon_social":"OPERADORA Y ADMINISTRADORA DE INFORMACION Y EDITORIAL, S.A. DE C.V.                                                                                                                                     ",
+                    "observaciones":"REPRODUCCION IMPRESION COMPRA VENTA MAQUILACION DIFUSION DE TODA CLASE DE PERIODICOS DIARIOS REVISTAS LIBROS ASI COMO PUBLICACIONES PERIODICAS        ",
+                    "sitio_web":"heraldodemexico.com.mx        ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-03-03",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":19,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-03-03",
+                            "fecha_registro":"2023-03-03",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":263,\"calle\":\"AVENIDA INSURGENTES SUR NUMERO 1271 PISO 2 INTERIOR OFICINA 202\",\"colonia\":\"EXTREMADURA INSURGENTES\",\"codigo_postal\":3740,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"BENITO JUAREZ\",\"fecha_registro\":\"2023-03-03\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":382,
+                            "tipo_representante":"Legal",
+                            "nombre":"JUAN CARLOS CELAYETA MARTINEZ",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":381,
+                            "tipo_representante":"Ventas",
+                            "nombre":"RICARDO MUÑOZ FRAGOSO",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":650,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5528998100",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":651,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"ricardo.munoz@elheraldodemexico.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"BIENES IMPRESOS ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"OTRO",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idProveedor":264,
+            "numero_proveedor":8636,
+            "fecha_alta":"2022-11-24",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-07-31",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":264,
+                    "idProveedor":264,
+                    "idrefrendo":20,
+                    "iddomicilio":264,
+                    "rfc":"SIM210908LT3   ",
+                    "razon_social":"SISTEMA INTEGRAL DE MANTENIMIENTO ALFA, S.A. DE C.V.                                                                                                                                                    ",
+                    "observaciones":"MANTENIMIENTO INTEGRAL DE INMUEBLES AIRE ACONDICIONADO PINTURA ELECTRICIDAD HERRERIA CERRAJERIA CANCELERIA CARPINTERIA PLANTAS DE EMERGENCIA JARDINERI",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-07-31",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":20,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-07-31",
+                            "fecha_registro":"2023-07-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":"{\"iddomicilio\":264,\"calle\":\"CALLE 5 DE FEBRERO NUMERO 43 INTERIOR A\",\"colonia\":\"NEXTENGO\",\"codigo_postal\":2070,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"AZCAPOTZALCO\",\"fecha_registro\":\"2023-07-31\",\"usuario_registra\":\"migracion\"}",
+                    "Representantes":[
+                        {
+                            "idrepresentantes":384,
+                            "tipo_representante":"Legal",
+                            "nombre":"JESSICA FLORES PEREZ",
+                            "activo":1
+                        },
+                        {
+                            "idrepresentantes":383,
+                            "tipo_representante":"Ventas",
+                            "nombre":"URIEL CASTILLO LUNA",
+                            "activo":1
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":652,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5539893638",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":653,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5631449321",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":654,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"facturacion.sistemaintegral@gmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"MANTENIMIENTO Y CONSERVACION DE MOBILIARIO Y EQUIPO DE OFICINA  ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"MANTENIMIENTO A INMUEBLES, CONSTRUCCION Y REMODELACION  ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"MANTENIMIENTO, REFACCIONES Y EQUIPO PARA AIRE ACONDICIONADO ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"SERVICIO DE FUMIGACION Y JARDINERIA ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"MAQUINARIA Y EQUIPO INDUSTRIAL Y MANTENIMIENTO  ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"MANTENIMIENTO A INSTALACIONES HIDROSANITARIAS Y AL EQUIPO DE TRATAMIENTO DE AGUA",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"MAQUINARIA Y EQUIPO ELECTRICO, ELECTRONICO Y MANTENIMIENTO  ",
+                            "activo":1
+                        },
+                        {
+                            "giro_comercial":"MATERIALES PARA LA CONSTRUCCION Y FERRETERIA EN GENERAL ",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

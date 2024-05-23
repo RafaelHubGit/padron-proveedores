@@ -8,6 +8,7 @@ import { CardGeneral } from '../CardGeneral';
 import { TableDocumentsComponent } from '../documentos tabla/TableDocumentsComponent';
 import { DireccionComponent } from '../DireccionComponent';
 import { InactivarSectionComponent } from '../InactivarSectionComponent';
+import { TablaRepresentanteContactoComponent } from '../representante contacto tabla/TablaRepresentanteContactoComponent';
 // import 'react-clock/dist/Clock.css';
 
 export const ProveedorInfo = () => {
@@ -114,38 +115,19 @@ export const ProveedorInfo = () => {
 
         <div className="row mt-4">
             <div className="col-md-6">
-                <div className="form-check mb-3">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                    <label className="form-check-label" htmlFor="flexCheckChecked">
-                        Tiene Documentos
-                    </label>
-                </div>
-                <div className='mt-4'>
-                    <CardGeneral
-                        title="Documetos"
-                    >
-                        <div style={{
-                            display: 'flex',
-                            justifyContent: 'flex-end'
-                        }}>
-
-                            <button type="button" className="btn btn-success">Nuevo</button>
-                        </div>
-                        <TableDocumentsComponent
-                            key={'documentos'}
-                            classBody={{ height: '135px' }}
-                            headers={ ['Documento', 'Tipo'] }
-                            body={ [
-                                    {document:'holis.pdf', type:'pdf'},
-                                    {document:'holis.pdf', type:'pdf'},
-                                    {document:'holis.pdf', type:'pdf'},
-                                    {document:'holis.pdf', type:'pdf'},
-                                    {document:'holis.pdf', type:'pdf'},
-                                    {document:'holis.pdf', type:'pdf'}
-                                ] }
-                        />
-                    </CardGeneral>
-                </div>
+                <TableDocumentsComponent
+                    key={'documentos'}
+                    classBody={{ height: '135px' }}
+                    headers={ ['Documento', 'Tipo'] }
+                    body={ [
+                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
+                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
+                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
+                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
+                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
+                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'}
+                        ] }
+                />
             </div>
             <div className="col-md-6 mt-5">
                 <CardGeneral
@@ -158,7 +140,19 @@ export const ProveedorInfo = () => {
         
         <div className="row mt-5">
             <div className="col-md-6">
-                <CardGeneral
+                <TablaRepresentanteContactoComponent 
+                    key={'representantes '}
+                    classBody={{ height: '135px' }}
+                    title="Representantes"
+                    headers={ ['Representantes', 'Tipo'] }
+                    body={ [
+                        {document:'Juacinto Ibarra de la Barrera', type:'Vendedor', nota:"La nota muajaja"},
+                        {document:'Juan Gabriel Gonzalez Gonzalez', type:'Vendedor'},
+                        {document:'Rogelio Rojas del Rosal', type:'Legal'},
+                        {document:'Sancho Panza Quijotence ', type:'Legal'}
+                    ] }
+                />
+                {/* <CardGeneral
                     title="Representantes"
                 >
                     <div style={{
@@ -179,11 +173,23 @@ export const ProveedorInfo = () => {
                             {document:'Sancho Panza Quijotence ', type:'Legal'}
                         ] }
                     />
-                </CardGeneral>
+                </CardGeneral> */}
             </div>
 
             <div className="col-md-6">
-                <CardGeneral
+                <TablaRepresentanteContactoComponent 
+                    key={'contacto '}
+                    classBody={{ height: '135px' }}
+                    title="Contacto"
+                    headers={ ['Representantes', 'Tipo'] }
+                    body={ [
+                        {document:'55-70-22-34-55', type:'Telefono', nota:"Nota del telefono"},
+                        {document:'javier@gmail.com', type:'email'},
+                        {document:'55-32-44-35', type:'Fax'},
+                        {document:'55-33-24-35', type:'Beeper'}
+                    ] }
+                />
+                {/* <CardGeneral
                     title="Contacto"
                 >
                     <div style={{
@@ -204,7 +210,7 @@ export const ProveedorInfo = () => {
                                 {document:'55-33-24-35', type:'Beeper'}
                             ] }
                     />
-                </CardGeneral>
+                </CardGeneral> */}
             </div>
         </div>
 

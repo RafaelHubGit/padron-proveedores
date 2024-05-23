@@ -1,7 +1,18 @@
-import React from 'react'
+import React, {  useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
+import { CardGeneral } from '../CardGeneral';
+import { useToolTip } from '../../hooks/useToolTip';
+
 
 export const TableDocumentsComponent = ({ headers = [], body = [], classBody = "" }) => {
+
+  const [tieneDocumento, setTieneDocumento] = useState( true )
+
+  useToolTip();
+
+  const handleCheck = ( event )=> {
+    setTieneDocumento(event.target.checked);
+  }
 
     const handleOption = (document) => {
         Swal.fire({
@@ -28,25 +39,68 @@ export const TableDocumentsComponent = ({ headers = [], body = [], classBody = "
   
     return (
       <div className='table-documents-container'>
-        <table className='table table-hover fixed_header'>
-          <thead>
-            <tr>
-              {headers.map((h) => <th key={h}>{h}</th>)}
-            </tr>
-          </thead>
-  
-          <tbody style={classBody}>
-            {body.map(b => (
-              <tr 
-                key={b.document} 
-                onDoubleClick={() => handleOption(b.document)}
-              >
-                <td>{b.document}</td>
-                <td>{b.type}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+
+          <div className="form-check mb-3">
+              <input 
+                className="form-check-input" 
+                type="checkbox" 
+                value="" 
+                id="flexCheckChecked"
+                checked={ tieneDocumento }
+                onClick={ handleCheck }
+              />
+              <label className="form-check-label" htmlFor="flexCheckChecked">
+                  Tiene Documentos
+              </label>
+          </div>
+
+        <CardGeneral
+                        title="Documetos"
+        >
+
+          {
+            !tieneDocumento 
+            ? (
+              <div className='d-flex justify-content-center align-items-center '>
+                No hay información que mostrar
+              </div>
+            )
+            :(
+              <div>
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'flex-end'
+                }}>
+
+                    <button type="button" className="btn btn-success">Nuevo</button>
+                </div>
+                <table className='table table-hover fixed_header'>
+                  <thead>
+                    <tr>
+                      {headers.map((h) => <th key={h}>{h}</th>)}
+                    </tr>
+                  </thead>
+          
+                  <tbody style={classBody}>
+                    {body.map(b => (
+                      <tr 
+                        key={b.document} 
+                        onDoubleClick={() => handleOption(b.document)}
+                        className='cursor-pointer'
+                        data-bs-toggle="tooltip" data-bs-placement="top" title={b.nota ? b.nota : ""}
+                      >
+                        <td>{b.document}</td>
+                        <td>{b.type}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )
+          }
+
+        </CardGeneral>
       </div>
     );
   };
+
