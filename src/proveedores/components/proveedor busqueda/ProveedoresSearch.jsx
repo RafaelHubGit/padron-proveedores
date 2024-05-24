@@ -3,15 +3,22 @@ import { InputSearch } from '../../../generalComponents/InputSearch'
 import { ProveedorTable } from './ProveedorTable';
 import { GeneralContext } from '../../context/GeneralContext';
 import useDivHeight from '../../hooks/useDivHeight';
+import { getProveedores } from '../../helpers/dataJsonFnc';
 
 
 
 export const ProveedoresSearch = () => {
 
+    const [proveedores, setProveedores] = useState([]);
     const [searchContainerRef, searchContainerHeight] = useDivHeight();
     const [searchText, setSearchText] = useState('');
     const { setHeight } = useContext( GeneralContext );
 
+
+    useEffect(() => {
+        setProveedores(getProveedores());
+    }, [])
+    
 
     useEffect(() => {
         setHeight( 'searchContainer', searchContainerHeight );
@@ -34,7 +41,9 @@ export const ProveedoresSearch = () => {
                 </div>
             </div>
             <div className='' >
-                <ProveedorTable />
+                <ProveedorTable
+                    proveedores={proveedores}
+                />
             </div>
         </div>
     </div>

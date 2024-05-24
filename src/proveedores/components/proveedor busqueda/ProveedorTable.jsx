@@ -3,7 +3,7 @@ import { GeneralContext } from '../../context/GeneralContext';
 import useDivHeight from '../../hooks/useDivHeight';
 import { useNavigate } from 'react-router-dom';
 
-export const ProveedorTable = () => {
+export const ProveedorTable = ({ proveedores=[] }) => {
 
     const navigate = useNavigate();
     const [tBodyHeight, setTBodyHeight] = useState( 0 )
@@ -37,47 +37,33 @@ export const ProveedorTable = () => {
                 </tr>
             </thead>
             <tbody className='table-group-divider' style={{ height: `calc(85vh - ${tBodyHeight}px)` }}>
-            <tr
-                    onDoubleClick={() => handleRowClick()}
-                    style={{ cursor: 'pointer' }}
-                >
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr
-                    onDoubleClick={() => handleRowClick()}
-                    style={{ cursor: 'pointer' }}
-                >
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr
-                    onDoubleClick={() => handleRowClick()}
-                    style={{ cursor: 'pointer' }}
-                >
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                <tr
-                    onDoubleClick={() => handleRowClick()}
-                    style={{ cursor: 'pointer' }}
-                >
-                    <th scope="row">1</th>
-                    <td>ITF210513ABC</td>
-                    <td>Inovaciones Tecnológicas Futuro S.A. de C.V.</td>
-                    <td> <span className="badge text-bg-success">Activo</span>  </td>
-                    <td> LA JUSTIFICACION DE SI ESTA O NO ESTA BLA BLA BLA BLA BLA BLA BLA BLA </td>
-                </tr>
-                
+
+                {
+
+                    proveedores.map( p => {
+                        return (
+                            <tr
+                                onDoubleClick={() => handleRowClick( p )}
+                                style={{ cursor: 'pointer' }}
+                            >
+                                <th scope="row"> { p.numero_proveedor } </th>
+                                <td> { p.rfc } </td>
+                                <td> { p.razon_social } </td>
+                                <td>
+                                    {
+                                        p.activo ? 
+                                            <span className="badge text-bg-success">Activo</span> 
+                                        :
+                                            <span className="badge text-bg-danger">Inactivo</span> 
+                                    } 
+                                
+                                </td>
+                                <td>  </td>
+                            </tr>
+                        )
+                    })
+
+                }
 
             </tbody>
         </table>

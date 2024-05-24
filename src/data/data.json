@@ -31,7 +31,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":240,\"calle\":\"CALLE REPUBLICA DE CUBA NUMERO 2 ESTACIONAMIENTO\",\"colonia\":\"CENTRO DE LA  AREA 2\",\"codigo_postal\":6010,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"CUAUHTEMOC CIUDAD DE MEXICO\",\"fecha_registro\":\"2023-07-31\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":240,
+                            "calle":"CALLE REPUBLICA DE CUBA NUMERO 2 ESTACIONAMIENTO",
+                            "colonia":"CENTRO DE LA  AREA 2",
+                            "codigo_postal":6010,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"CUAUHTEMOC CIUDAD DE MEXICO",
+                            "fecha_registro":"2023-07-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Contacto":[
                         {
                             "idcontacto":589,
@@ -74,7 +85,7 @@
                     "idrefrendo":2,
                     "iddomicilio":241,
                     "rfc":"VAI1409222H1   ",
-                    "razon_social":"VAINDEC SA DE CV                                                                  ",
+                    "razon_social":"VAINDEC SA DE CV                                                                                                                                                                                        ",
                     "observaciones":"SERVICIOS DE CONSULTORIA EN COMPUTACIÓN                                                                                                               ",
                     "activo":1,
                     "usuario_registra":"migracion",
@@ -88,7 +99,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":241,\"calle\":\"CALLE VOLCAN NUMERO 150 INTERIOR 500\",\"colonia\":\"LOMAS DE CHAPULTEPEC V SECCION\",\"codigo_postal\":11000,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO\",\"fecha_registro\":\"2023-05-30\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":241,
+                            "calle":"CALLE VOLCAN NUMERO 150 INTERIOR 500",
+                            "colonia":"LOMAS DE CHAPULTEPEC V SECCION",
+                            "codigo_postal":11000,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"MIGUEL HIDALGO",
+                            "fecha_registro":"2023-05-30",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":345,
@@ -175,7 +197,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":242,\"calle\":\"CALLE PLATEROS NUMERO 7 INTERIOR CUARTO PISO\",\"colonia\":\"SAN JOSE INSURGENTES\",\"codigo_postal\":3900,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"BENITO JUAREZ\",\"fecha_registro\":\"2023-06-05\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":242,
+                            "calle":"CALLE PLATEROS NUMERO 7 INTERIOR CUARTO PISO",
+                            "colonia":"SAN JOSE INSURGENTES",
+                            "codigo_postal":3900,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"BENITO JUAREZ",
+                            "fecha_registro":"2023-06-05",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":347,
@@ -261,7 +294,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":244,\"calle\":\"AVENIDA JORGE JIMENEZ CANTU EXTERIOR SN INTERIOR TORRE 5 A DESPACHO 312\",\"colonia\":\"HACIENDA DE VALLE ESCONDIDO ATIZAPAN DE ZARAGOZA ESTADO DE MEXICO\",\"codigo_postal\":52937,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-07-26\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":244,
+                            "calle":"AVENIDA JORGE JIMENEZ CANTU EXTERIOR SN INTERIOR TORRE 5 A DESPACHO 312",
+                            "colonia":"HACIENDA DE VALLE ESCONDIDO ATIZAPAN DE ZARAGOZA ESTADO DE MEXICO",
+                            "codigo_postal":52937,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"",
+                            "fecha_registro":"2023-07-26",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":352,
@@ -337,7 +381,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":246,\"calle\":\"CALLE LAGO ALBERTO NUMERO 442 INTERIOR TORRE A OFICINA 304\",\"colonia\":\"ANAHUAC I SECCION\",\"codigo_postal\":11320,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO\",\"fecha_registro\":\"2023-09-04\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":246,
+                            "calle":"CALLE LAGO ALBERTO NUMERO 442 INTERIOR TORRE A OFICINA 304",
+                            "colonia":"ANAHUAC I SECCION",
+                            "codigo_postal":11320,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"MIGUEL HIDALGO",
+                            "fecha_registro":"2023-09-04",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":356,
@@ -440,7 +495,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":247,\"calle\":\"ISLA DE ENMEDIO NUMERO 29\",\"colonia\":\"PRADO VALLEJO TLALNEPANTLA DE BAZ ESTADO DE MEXICO\",\"codigo_postal\":54170,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-05-18\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":247,
+                            "calle":"ISLA DE ENMEDIO NUMERO 29",
+                            "colonia":"PRADO VALLEJO TLALNEPANTLA DE BAZ ESTADO DE MEXICO",
+                            "codigo_postal":54170,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"",
+                            "fecha_registro":"2023-05-18",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":358,
@@ -510,7 +576,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":248,\"calle\":\"CALLE ZACAPOAXTLA NUMERO 120 INTERIOR CASA 3\",\"colonia\":\"GRANJAS DEL SUR PUEBLA PUEBLA\",\"codigo_postal\":72470,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-03-03\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":248,
+                            "calle":"CALLE ZACAPOAXTLA NUMERO 120 INTERIOR CASA 3",
+                            "colonia":"GRANJAS DEL SUR PUEBLA PUEBLA",
+                            "codigo_postal":72470,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"",
+                            "fecha_registro":"2023-03-03",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":359,
@@ -580,7 +657,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":249,\"calle\":\"CALLE CORDILLERA DE LOS ALPES NUMERO 2428\",\"colonia\":\"MARAVILLAS PUEBLA PUEBLA\",\"codigo_postal\":72220,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-05-31\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":249,
+                            "calle":"CALLE CORDILLERA DE LOS ALPES NUMERO 2428",
+                            "colonia":"MARAVILLAS PUEBLA PUEBLA",
+                            "codigo_postal":72220,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"",
+                            "fecha_registro":"2023-05-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Contacto":[
                         {
                             "idcontacto":611,
@@ -645,7 +733,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":251,\"calle\":\"CALLE 3 ORIENTE NUMERO 201\",\"colonia\":\"CENTRO PUEBLA PUEBLA\",\"codigo_postal\":72000,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-07-05\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":251,
+                            "calle":"CALLE 3 ORIENTE NUMERO 201",
+                            "colonia":"CENTRO PUEBLA PUEBLA",
+                            "codigo_postal":72000,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"",
+                            "fecha_registro":"2023-07-05",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":363,
@@ -717,7 +816,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":252,\"calle\":\"CALLE CHOPO NUMERO 110 INTERIOR PISO 3 DEPTO 4\",\"colonia\":\"JESUS GONZALEZ ORTEGA HEROICA PUEBLA DE ZARAGOZA PUEBLA\",\"codigo_postal\":72040,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-05-31\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":252,
+                            "calle":"CALLE CHOPO NUMERO 110 INTERIOR PISO 3 DEPTO 4",
+                            "colonia":"JESUS GONZALEZ ORTEGA HEROICA PUEBLA DE ZARAGOZA PUEBLA",
+                            "codigo_postal":72040,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"",
+                            "fecha_registro":"2023-05-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":364,
@@ -790,7 +900,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":253,\"calle\":\"CALLE ALLENDE NUMERO 16 A\",\"colonia\":\"CENTRO\",\"codigo_postal\":74400,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"IZUCAR DE MATAMOROS PUEBLA\",\"fecha_registro\":\"2023-03-29\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":253,
+                            "calle":"CALLE ALLENDE NUMERO 16 A",
+                            "colonia":"CENTRO",
+                            "codigo_postal":74400,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"IZUCAR DE MATAMOROS PUEBLA",
+                            "fecha_registro":"2023-03-29",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Contacto":[
                         {
                             "idcontacto":622,
@@ -855,7 +976,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":254,\"calle\":\"CALLE BOSQUE DE OMBUES NUMERO 187\",\"colonia\":\"BOSQUE DE LAS LOMAS\",\"codigo_postal\":11700,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO\",\"fecha_registro\":\"2023-07-27\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":254,
+                            "calle":"CALLE BOSQUE DE OMBUES NUMERO 187",
+                            "colonia":"BOSQUE DE LAS LOMAS",
+                            "codigo_postal":11700,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"MIGUEL HIDALGO",
+                            "fecha_registro":"2023-07-27",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":366,
@@ -941,7 +1073,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":255,\"calle\":\"CALLE SUR 89 NUMERO 235 INTERIOR 5\",\"colonia\":\"CACAMA\",\"codigo_postal\":9450,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"IZTAPALAPA\",\"fecha_registro\":\"2023-03-24\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":255,
+                            "calle":"CALLE SUR 89 NUMERO 235 INTERIOR 5",
+                            "colonia":"CACAMA",
+                            "codigo_postal":9450,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"IZTAPALAPA",
+                            "fecha_registro":"2023-03-24",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":367,
@@ -1007,7 +1150,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":257,\"calle\":\"CALLE SENECA NUMERO EXTERIOR 134  INTERIOR PISO 3 OFICINA C COLONIA POLANCO CHAPULTEPEC\",\"colonia\":\"\",\"codigo_postal\":0,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO  11560\",\"fecha_registro\":\"2023-05-25\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":257,
+                            "calle":"CALLE SENECA NUMERO EXTERIOR 134  INTERIOR PISO 3 OFICINA C COLONIA POLANCO CHAPULTEPEC",
+                            "colonia":"",
+                            "codigo_postal":0,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"MIGUEL HIDALGO  11560",
+                            "fecha_registro":"2023-05-25",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":371,
@@ -1101,7 +1255,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":258,\"calle\":\"CALLE PLAZA JUAREZ NUMERO 124 INTERIOR PISO COMERCIAL 2\",\"colonia\":\": CENTRO PACHUCA DE SOTO HIDALGO\",\"codigo_postal\":42000,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-05-29\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":258,
+                            "calle":"CALLE PLAZA JUAREZ NUMERO 124 INTERIOR PISO COMERCIAL 2",
+                            "colonia":": CENTRO PACHUCA DE SOTO HIDALGO",
+                            "codigo_postal":42000,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"",
+                            "fecha_registro":"2023-05-29",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":373,
@@ -1200,7 +1365,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":259,\"calle\":\"CALLE 107 PONIENTE NUMERO 314\",\"colonia\":\"INF LOMA BELLA PUEBLA PUEBLA\",\"codigo_postal\":72490,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"\",\"fecha_registro\":\"2023-04-04\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":259,
+                            "calle":"CALLE 107 PONIENTE NUMERO 314",
+                            "colonia":"INF LOMA BELLA PUEBLA PUEBLA",
+                            "codigo_postal":72490,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"",
+                            "fecha_registro":"2023-04-04",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":376,
@@ -1283,7 +1459,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":260,\"calle\":\"CALLE SENECA NUMERO 134 INTERIOR PISO 3\",\"colonia\":\"POLANCO CHAPULTEPEC\",\"codigo_postal\":11560,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"MIGUEL HIDALGO\",\"fecha_registro\":\"2023-05-25\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":260,
+                            "calle":"CALLE SENECA NUMERO 134 INTERIOR PISO 3",
+                            "colonia":"POLANCO CHAPULTEPEC",
+                            "codigo_postal":11560,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"MIGUEL HIDALGO",
+                            "fecha_registro":"2023-05-25",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":378,
@@ -1359,7 +1546,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":261,\"calle\":\"AVENIDA NUEVO LEON NUMERO 276 INTERIOR 701\",\"colonia\":\"HIPODROMO\",\"codigo_postal\":6100,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"CUAUHTEMOC\",\"fecha_registro\":\"2023-03-03\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":261,
+                            "calle":"AVENIDA NUEVO LEON NUMERO 276 INTERIOR 701",
+                            "colonia":"HIPODROMO",
+                            "codigo_postal":6100,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"CUAUHTEMOC",
+                            "fecha_registro":"2023-03-03",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":380,
@@ -1439,7 +1637,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":263,\"calle\":\"AVENIDA INSURGENTES SUR NUMERO 1271 PISO 2 INTERIOR OFICINA 202\",\"colonia\":\"EXTREMADURA INSURGENTES\",\"codigo_postal\":3740,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"BENITO JUAREZ\",\"fecha_registro\":\"2023-03-03\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":263,
+                            "calle":"AVENIDA INSURGENTES SUR NUMERO 1271 PISO 2 INTERIOR OFICINA 202",
+                            "colonia":"EXTREMADURA INSURGENTES",
+                            "codigo_postal":3740,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"BENITO JUAREZ",
+                            "fecha_registro":"2023-03-03",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":382,
@@ -1514,7 +1723,18 @@
                             "usuario_registra":"migracion"
                         }
                     ],
-                    "Domicilio":"{\"iddomicilio\":264,\"calle\":\"CALLE 5 DE FEBRERO NUMERO 43 INTERIOR A\",\"colonia\":\"NEXTENGO\",\"codigo_postal\":2070,\"estado\":\"CIUDAD DE MEXICO\",\"entidad_local\":\"AZCAPOTZALCO\",\"fecha_registro\":\"2023-07-31\",\"usuario_registra\":\"migracion\"}",
+                    "Domicilio":[
+                        {
+                            "iddomicilio":264,
+                            "calle":"CALLE 5 DE FEBRERO NUMERO 43 INTERIOR A",
+                            "colonia":"NEXTENGO",
+                            "codigo_postal":2070,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"AZCAPOTZALCO",
+                            "fecha_registro":"2023-07-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
                     "Representantes":[
                         {
                             "idrepresentantes":384,
