@@ -4,9 +4,9 @@ export const DireccionComponent = () => {
   return (
     <div>
 
-      <div class="form-floating mb-3">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-        <label for="floatingTextarea">Calle</label>
+      <div className="form-floating mb-3">
+        <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label htmlFor="floatingTextarea">Calle</label>
       </div>
       <div className='row'>
         {/* <div> */}

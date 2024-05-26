@@ -19,7 +19,6 @@ export const ProveedorInfo = () => {
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
-        console.log("Selected date:", date);
     };
 
   return (
@@ -39,7 +38,7 @@ export const ProveedorInfo = () => {
             </div>
             <div className="col-md-6">
                 <div className='boton-wrap mb-3'>
-                    <button type="button" class="btn btn-primary w-100"> Nuevo Refrendo </button>
+                    <button type="button" className="btn btn-primary w-100"> Nuevo Refrendo </button>
                 </div>
             </div>
         </div>
@@ -121,11 +120,11 @@ export const ProveedorInfo = () => {
                     headers={ ['Documento', 'Tipo'] }
                     body={ [
                             {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'}
+                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
+                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
+                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
+                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
+                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'}
                         ] }
                 />
             </div>

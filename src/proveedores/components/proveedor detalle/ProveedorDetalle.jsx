@@ -7,20 +7,20 @@ import { getProveedorById } from '../../helpers/dataJsonFnc'
 
 export const ProveedorDetalle = () => {
 
-    const { proveedorSelected, setProveedor } = useContext( ProveedoresContext )
-    const [proveedor, setProveedorState] = useState({})
+    // const { proveedorSelected, setProveedor } = useContext( ProveedoresContext )
+    // const [proveedor, setProveedorState] = useState({})
     const navigate = useNavigate();
     const location = useLocation();
 
-    useEffect(() => {
-        const PROVEEDOR = getProveedorById( proveedorSelected.idProveedor );
-        setProveedor( PROVEEDOR );
-        setProveedorState( PROVEEDOR )
-    }, [proveedorSelected])
+    // useEffect(() => {
+    //     const PROVEEDOR = getProveedorById( proveedorSelected.idProveedor );
+    //     setProveedor( PROVEEDOR );
+    //     setProveedorState( PROVEEDOR )
+    // }, [proveedorSelected])
 
-    useEffect(() => {
-      console.log('EL RPROVEEDOR  : ', proveedor);
-    }, [proveedor])
+    // useEffect(() => {
+    // //   console.log('EL RPROVEEDOR  : ', proveedor);
+    // }, [proveedor])
     
     
     
@@ -49,8 +49,8 @@ export const ProveedorDetalle = () => {
 
         <div className='header-container mb-4'>
             <div className='proveedor-data'>
-                <p className='nombre-proveedor'> { proveedor.razon_social } </p>
-                <p className='rfc'> RFC: { proveedor.rfc } </p>
+                {/* <p className='nombre-proveedor'> { proveedor.razon_social } </p>
+                <p className='rfc'> RFC: { proveedor.rfc } </p> */}
                 <p className='refrendo'>Refrendo: 3</p>
             </div>
             <div className='proveedor-status'>
