@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
 import { generalReducer } from './generalReducer'
-import { types } from '../types/types';
+import { types } from '../../types/types';
 import { GeneralContext } from './GeneralContext';
 
 

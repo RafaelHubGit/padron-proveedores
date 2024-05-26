@@ -8,6 +8,7 @@ import './styles.css';
 
 export const LoginPage = () => {
 
+
   const { instance } = useMsal();
   const isAuthenticated = useIsAuthenticated();
   const navigate = useNavigate();
@@ -16,22 +17,25 @@ export const LoginPage = () => {
   useEffect(() => {
     // Si el usuario está autenticado, redirige a la página de inicio
     if (isAuthenticated) {
-      navigate('/home');
+      // navigate('/home');
     }
   }, [isAuthenticated]);
 
 
-  const handleLogin = async () => {
+  // const handleLogin = async () => {
 
-    try {
-      const response = await instance.loginRedirect(loginRequest);
-      const user = response.account;
-      // const userName = user.name;
-      // const userEmail = user.username;
-    } catch (error) {
+  //   try {
+  //     await instance.loginRedirect(loginRequest);
+  //   } catch (error) {
+  //     console.error(e);
+  //   }
+
+  // };
+
+  const handleLogin = () => {
+    instance.loginRedirect(loginRequest).catch((e) => {
       console.error(e);
-    }
-
+    });
   };
 
   return (

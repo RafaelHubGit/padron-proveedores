@@ -1,11 +1,30 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { ProveedorDetalleRouter } from '../../../router/ProveedorDetalleRouter'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { ProveedoresContext } from '../../context/Proveedores/ProveedoresContext'
+import { getProveedorById } from '../../helpers/dataJsonFnc'
+
 
 export const ProveedorDetalle = () => {
 
+    const { proveedorSelected, setProveedor } = useContext( ProveedoresContext )
+    const [proveedor, setProveedorState] = useState({})
     const navigate = useNavigate();
     const location = useLocation();
+
+    useEffect(() => {
+        const PROVEEDOR = getProveedorById( proveedorSelected.idProveedor );
+        setProveedor( PROVEEDOR );
+        setProveedorState( PROVEEDOR )
+    }, [proveedorSelected])
+
+    useEffect(() => {
+      console.log('EL RPROVEEDOR  : ', proveedor);
+    }, [proveedor])
+    
+    
+    
+    
 
     const handleBack = () => {
         navigate(`/home/busqueda`);
@@ -30,8 +49,8 @@ export const ProveedorDetalle = () => {
 
         <div className='header-container mb-4'>
             <div className='proveedor-data'>
-                <p className='nombre-proveedor'>Innovaciones Tecológicas Futuro S.A. de C.V.</p>
-                <p className='rfc'> RFC: ITF210513ABC </p>
+                <p className='nombre-proveedor'> { proveedor.razon_social } </p>
+                <p className='rfc'> RFC: { proveedor.rfc } </p>
                 <p className='refrendo'>Refrendo: 3</p>
             </div>
             <div className='proveedor-status'>

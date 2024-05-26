@@ -1,0 +1,76 @@
+
+
+PETICIONES A LA BD 
+
+Se va a hacer la peticion a la base de datos obteniendo toda la informacion en formato json 
+de la sig manera,
+esto para optimizar las peticiones a la bd y obtener la info de una vez
+
+{
+            "idProveedor":240,
+            "numero_proveedor":8660,
+            "fecha_alta":"2022-12-23",
+            "tiene_documentos":0,
+            "es_repse":0,
+            "tipo_proveedor":"C",
+            "activo":1,
+            "usuario_registra":"migracion",
+            "fecha_registro":"2023-07-31",
+            "DatosProveedores":[
+                {
+                    "iddatos_proveedores":240,
+                    "idProveedor":240,
+                    "idrefrendo":1,
+                    "iddomicilio":240,
+                    "rfc":"AAAM780312B42  ",
+                    "razon_social":"MANUEL AYALA AMADOR                                                                                                                                                                                     ",
+                    "observaciones":"PRESTACION DE SERVICIO DE ESTACIONAMIENTO Y PENSION PARA AUTOS                                                                                        ",
+                    "activo":1,
+                    "usuario_registra":"migracion",
+                    "fecha_registro":"2023-07-31",
+                    "Refrendo":[
+                        {
+                            "idrefrendo":1,
+                            "numero_refrendo":1,
+                            "fecha_refrendo":"2023-07-31",
+                            "fecha_registro":"2023-07-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Domicilio":[
+                        {
+                            "iddomicilio":240,
+                            "calle":"CALLE REPUBLICA DE CUBA NUMERO 2 ESTACIONAMIENTO",
+                            "colonia":"CENTRO DE LA  AREA 2",
+                            "codigo_postal":6010,
+                            "estado":"CIUDAD DE MEXICO",
+                            "entidad_local":"CUAUHTEMOC CIUDAD DE MEXICO",
+                            "fecha_registro":"2023-07-31",
+                            "usuario_registra":"migracion"
+                        }
+                    ],
+                    "Contacto":[
+                        {
+                            "idcontacto":589,
+                            "idcat_tipo_contacto":1,
+                            "detalle_contacto":"5540944857",
+                            "notas":"",
+                            "descripcion_contacto":"Teléfono"
+                        },
+                        {
+                            "idcontacto":590,
+                            "idcat_tipo_contacto":3,
+                            "detalle_contacto":"estacionamientomex@gmail.com",
+                            "notas":"",
+                            "descripcion_contacto":"Mail"
+                        }
+                    ],
+                    "GirosComerciales":[
+                        {
+                            "giro_comercial":"ARRENDAMIENTO DE INMUEBLES Y EQUIPO DE TRANSPORTE",
+                            "activo":1
+                        }
+                    ]
+                }
+            ]
+        }

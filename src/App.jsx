@@ -8,9 +8,7 @@ import { Router } from 'react-router-dom'
 export const App = () => {
   return (
     <AuthProvider>
-        {/* <Router> */}
-          <AppRouter/>
-        {/* </Router> */}
+      <AppRouter/>
     </AuthProvider>
   )
 }
