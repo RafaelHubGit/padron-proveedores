@@ -39,7 +39,7 @@ export const ProveedorTable = ({ proveedores = [], handleProveedorSelected, fetc
                         endMessage={
                             <tr>
                                 <td colSpan="5" style={{ textAlign: 'center' }}>
-                                    <b>Yay! You have seen it all</b>
+                                    <b>No hay mas que mostrar</b>
                                 </td>
                             </tr>
                         }
