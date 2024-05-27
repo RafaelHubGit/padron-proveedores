@@ -34,7 +34,7 @@ export const ProveedorTable = ({ proveedores = [], handleProveedorSelected, fetc
                         dataLength={proveedores.length}
                         next={fetchMoreData}
                         hasMore={hasMore}
-                        loader={<tr><td colSpan="5">Cargando {pageSize} más...</td></tr>}
+                        loader={<tr><td colSpan="5">Cargando información...</td></tr>}
                         scrollableTarget="scrollableTbody"
                         endMessage={
                             <tr>

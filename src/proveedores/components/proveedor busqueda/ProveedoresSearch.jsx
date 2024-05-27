@@ -7,8 +7,10 @@ import { ProveedoresContext } from '../../context/Proveedores/ProveedoresContext
 import { useNavigate } from 'react-router-dom';
 import useFetch from '../../../hooks/useFetch';
 import ENDPOINTS from '../../../config/urls';
+import Swal from 'sweetalert2';
+import { showToast } from '../../../generalComponents/showToast';
 
-const pageSize = 20;
+const pageSize = 200;
 
 export const ProveedoresSearch = () => {
     const navigate = useNavigate();
@@ -25,10 +27,11 @@ export const ProveedoresSearch = () => {
 
     const { data, loading, error } = useFetch(fetchUrl);
 
+
     // Update fetch URL based on searchText and page
     useEffect(() => {
         if (!searchText) {
-            setProveedores([]);
+            // setProveedores([]);
             setFetchUrl(ENDPOINTS.SCROLLPROVEEDORES(page, pageSize));
         } else {
             setFetchUrl(null); // To prevent fetch if there is search text
@@ -38,7 +41,9 @@ export const ProveedoresSearch = () => {
     // Sync data with proveedores state when data changes and searchText is empty
     useEffect(() => {
         if (!loading && data && !searchText) {
-            setProveedores( [...proveedores, ...data] );
+            // setProveedores( [...proveedores, ...data] );
+            setProveedores(prevProveedores => prevProveedores.concat(data));
+            showToast(`${proveedores.length} Mostrados`, "info");
             if (data.length < pageSize) {
                 setHasMore(false);
             } else {
@@ -53,7 +58,18 @@ export const ProveedoresSearch = () => {
             setSearching(true);
             const timeout = setTimeout(() => {
                 fetch(ENDPOINTS.TYPESENSE(searchText))
-                    .then(response => response.json())
+                    .then(response => {
+                        if ( !response.ok ){
+                            if ( response.status == 413 ){
+                                Swal.fire({
+                                    title: "Su consulta tiene más de 250 registros",
+                                    text: "Ajuste su consulta.",
+                                    icon: "warning"
+                                  });
+                            }
+                        }
+                        return response.json()
+                    })
                     .then(data => {
                         const proveedores = data.hits.map(h => {
                             const PROVEEDORES = h.document;
@@ -64,6 +80,7 @@ export const ProveedoresSearch = () => {
                             }
                         });
                         setProveedores(proveedores);
+                        showToast(`${proveedores.length} Mostrados`, "info");
                         setSearching(false);
                         setHasMore(false);
                     })
