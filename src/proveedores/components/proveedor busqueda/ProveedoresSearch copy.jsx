@@ -7,6 +7,7 @@ import { ProveedoresContext } from '../../context/Proveedores/ProveedoresContext
 import { useNavigate } from 'react-router-dom';
 import useFetch from '../../../hooks/useFetch';
 import ENDPOINTS from '../../../config/urls';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const pageSize = 20;
 
@@ -20,7 +21,8 @@ export const ProveedoresSearch = () => {
     const [searching, setSearching] = useState(false);
     const { setHeight } = useContext(GeneralContext);
     const [page, setPage] = useState(1);
-    const [hasMore, setHasMore] = useState(true);
+    const [hasMore, setHasMore] = useState(false);
+
     const [fetchUrl, setFetchUrl] = useState(ENDPOINTS.SCROLLPROVEEDORES(page, pageSize)); // URL state
 
     const { data, loading, error } = useFetch(fetchUrl);
@@ -28,9 +30,10 @@ export const ProveedoresSearch = () => {
     // Update fetch URL based on searchText and page
     useEffect(() => {
         if (!searchText) {
-            setProveedores([]);
+            console.log('!search  ');
             setFetchUrl(ENDPOINTS.SCROLLPROVEEDORES(page, pageSize));
         } else {
+            console.log('el otro   ');
             setFetchUrl(null); // To prevent fetch if there is search text
         }
     }, [searchText, page]);
@@ -38,31 +41,29 @@ export const ProveedoresSearch = () => {
     // Sync data with proveedores state when data changes and searchText is empty
     useEffect(() => {
         if (!loading && data && !searchText) {
-            setProveedores( [...proveedores, ...data] );
+            setProveedores( data );
+            // setProveedores(prevProveedores => {
+            //     const newProveedores = data.filter(newProveedor => 
+            //         !prevProveedores.some(prevProveedor => prevProveedor.idProveedor === newProveedor.idProveedor)
+            //     );
+            //     return page === 1 ? newProveedores : [...prevProveedores, ...newProveedores];
+            // });
             if (data.length < pageSize) {
                 setHasMore(false);
             } else {
                 setHasMore(true);
             }
         }
-    }, [data, loading]);
+    }, [data, loading, searchText]);
 
     useEffect(() => {
         if (searchText) {
-            setProveedores([]);
             setSearching(true);
             const timeout = setTimeout(() => {
                 fetch(ENDPOINTS.TYPESENSE(searchText))
                     .then(response => response.json())
                     .then(data => {
-                        const proveedores = data.hits.map(h => {
-                            const PROVEEDORES = h.document;
-
-                            return {
-                                ...PROVEEDORES,
-                                activo : PROVEEDORES.activo == "Activo" ? 1 : 0
-                            }
-                        });
+                        const proveedores = data.hits.map(h => h.document);
                         setProveedores(proveedores);
                         setSearching(false);
                         setHasMore(false);
@@ -103,9 +104,9 @@ export const ProveedoresSearch = () => {
     };
 
     const fetchMoreData = () => {
-        // if (!searchText) {
+        if (!searchText) {
             setPage(prevPage => prevPage + 1);
-        // }
+        }
     };
 
     return (
@@ -120,13 +121,21 @@ export const ProveedoresSearch = () => {
                     </div>
                 </div>
 
-                <ProveedorTable
-                    proveedores={proveedores}
-                    handleProveedorSelected={handleProveedorSelected}
-                    fetchMoreData={fetchMoreData}
+                {/* <InfiniteScroll
+                    dataLength={proveedores.length}
+                    next={fetchMoreData}
                     hasMore={hasMore}
-                    pageSize={pageSize}
-                />
+                    loader={<h4>Loading...</h4>}
+                    endMessage={<p>No more data to load</p>}
+                > */}
+                    <ProveedorTable
+                        proveedores={proveedores}
+                        handleProveedorSelected={handleProveedorSelected}
+                        fetchMoreData={fetchMoreData}
+                        hasMore={hasMore}
+                        pageSize={pageSize}
+                    />
+                {/* </InfiniteScroll> */}
             </div>
         </div>
     );
