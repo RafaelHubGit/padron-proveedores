@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 
 import { DateTimePickerComponent } from '../../../generalComponents/dateTimePicker/DateTimePickerComponent';
@@ -9,13 +9,41 @@ import { TableDocumentsComponent } from '../documentos tabla/TableDocumentsCompo
 import { DireccionComponent } from '../DireccionComponent';
 import { InactivarSectionComponent } from '../InactivarSectionComponent';
 import { TablaRepresentanteContactoComponent } from '../representante contacto tabla/TablaRepresentanteContactoComponent';
+import { ProveedoresContext } from '../../context/Proveedores/ProveedoresContext';
+
+import tProveedor from '../../../data/tipoProveedor.json';
 // import 'react-clock/dist/Clock.css';
+
+const TIPOPROVEEDOR = tProveedor.tipoProveedor;
 
 export const ProveedorInfo = () => {
 
-    const [value, onChange] = useState(new Date());
 
+    // Uso del contexto para acceder al estado del proveedor seleccionado
+    const { proveedor, girosComerciales } = useContext(ProveedoresContext);
+    
+    // Estados locales para manejar los detalles específicos del proveedor
+    const [dProveedor, setDProveedor] = useState({});
+    const [contactos, setContactos] = useState([]);
+    const [domicilio, setDomicilio] = useState({});
+    const [giros, setGiros] = useState([]);
+    const [representantes, setRepresentantes] = useState([]);
+    const [refrendo, setRefrendo] = useState({});
+    const [inactivo, setInactivo] = useState({});
     const [selectedDate, setSelectedDate] = useState(null);
+
+    useEffect(() => {
+        if (proveedor?.DatosProveedores) {
+            const DPROVEEDOR = proveedor.DatosProveedores.find(dp => dp.activo === 1);
+            setDProveedor(DPROVEEDOR || {});
+            setContactos(DPROVEEDOR?.Contacto || []);
+            setDomicilio(DPROVEEDOR?.Domicilio[0] || {});
+            setGiros(DPROVEEDOR?.GirosComerciales || []);
+            setRepresentantes(DPROVEEDOR?.Representantes || []);
+            setRefrendo( DPROVEEDOR.Refrendo?.find( r => r.idrefrendo == DPROVEEDOR.idrefrendo ) || {} );
+            setInactivo( DPROVEEDOR.Inactivo?.[0] || {} );
+        }
+    }, [proveedor]);
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
@@ -29,17 +57,23 @@ export const ProveedorInfo = () => {
                     <DateTimePickerComponent
                         titulo="Fecha de alta "
                         setDate={handleDateChange}
+                        disabled = { proveedor?.activo == 0 ? true : false }
+                        initialValue={proveedor?.fecha_alta}
                     />
                     <DateTimePickerComponent
                         titulo="Fecha de refrendo "
                         setDate={handleDateChange}
+                        disabled = { proveedor?.activo == 0 ? true : false }
+                        initialValue={ refrendo?.fecha_refrendo }
                     />
                 </div>
             </div>
             <div className="col-md-6">
-                <div className='boton-wrap mb-3'>
-                    <button type="button" className="btn btn-primary w-100"> Nuevo Refrendo </button>
-                </div>
+                <button type="button" 
+                        className={`btn ${proveedor?.activo ? 'btn-primary' : 'btn-secondary'} w-100`}
+                        disabled={!proveedor?.activo}>  {/* El botón se deshabilita si proveedor.activo es falso */}
+                    Nuevo Refrendo
+                </button>
             </div>
         </div>
         <div className="row mt-4">
@@ -47,44 +81,54 @@ export const ProveedorInfo = () => {
                 <div className='repse-document-wrap row h-100  '> 
                     <div className="repse-wrap col-sm-6 col-md-6 d-flex flex-column justify-content-center ">
                         <div className="form-check mb-3">
-                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                            <input 
+                                className="form-check-input" 
+                                type="checkbox" 
+                                value="" 
+                                id="flexCheckChecked" 
+                                checked={ proveedor?.es_repse === 1 }
+                            />
                             <label className="form-check-label" htmlFor="flexCheckChecked">
                                 Es repse
                             </label>
                         </div>
-                        <DateTimePickerComponent
-                            titulo="Fecha repse "
-                            setDate={handleDateChange}
-                        />
+                        {
+                            proveedor?.es_repse && proveedor?.activo ? 
+                            (<DateTimePickerComponent
+                                titulo="Fecha repse "
+                                setDate={handleDateChange}
+                            />) : ""
+                        }
                     </div>
                     <div className=' col-sm-6 h-100 d-flex align-items-center'>
-                        <SubirDocumento/>
+                        {
+                            proveedor?.es_repse && proveedor?.activo ? 
+                            (<SubirDocumento/>) : ""
+                        }
                     </div>
                 </div>
             </div>
             <div className="col-md-6">
                 <div className='tipo-giros-wrap mb-3'>
                     <SelectComponent 
-                        options= {[
-                            { value: 'chocolate', label: 'Tipo Proveedor 1' },
-                            { value: 'strawberry', label: 'Tipo Proveedor 2' },
-                            { value: 'vanilla', label: 'Tipo Proveedor 3' }
-                        ]}
+                        options={ TIPOPROVEEDOR }
+                        initialValue = { proveedor?.tipo_proveedor }
                         title= "Tipo Proveedor"
+                        isDisabled = { proveedor?.activo == 0 ? true : false }
                     />
                     <SelectComponent 
                         title= "Giros Comerciales"
                         closeMenuOnSelect={false}
-                        // defaultValue={[colourOptions[4], colourOptions[5]]}
                         isMulti
                         showSelected = {true}
-                        options= {[
-                            { value: 'chocolate', label: 'Tipo Proveedor 1' },
-                            { value: 'strawberry', label: 'Tipo Proveedor 2' },
-                            { value: 'vanilla', label: 'Tipo Proveedor 3' },
-                            { value: 'vanilla2', label: 'Tipo Proveedor 2' },
-                            { value: 'vanilla3', label: 'Tipo Proveedor 4' }
-                        ]}
+                        options = { girosComerciales?.map( gc => {
+                            return {
+                                value: gc.idgiros_comerciales,
+                                label: gc.giro_comercial
+                            }
+                        } ) }
+                        initialValue={ giros?.map( g => g.idgiros_comerciales ) }
+                        isDisabled = { proveedor?.activo == 0 ? true : false }
                     />
                 </div>
             </div>
@@ -95,18 +139,25 @@ export const ProveedorInfo = () => {
                 <div className="form-floating">
                     <textarea 
                         className="form-control" 
-                        placeholder="Leave a comment here" 
-                        id="floatingTextarea2" 
+                        placeholder="Observaciones" 
+                        id="observacionesTextareaId" 
                         style={{ height: '100px' }} // Usar el objeto de estilo en React
+                        value={ dProveedor?.observaciones }
                     ></textarea>
-                    <label htmlFor="floatingTextarea2">Observaciones</label>
+                    <label htmlFor="observacionesTextareaId">Observaciones</label>
                 </div>
             </div>
             <div className="col-md-6 ">
                 <div className='web-wrap h-100 d-flex align-items-center  mt-md-2'>
                     <div className="form-floating w-100">
-                        <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                        <label htmlFor="floatingInput">Página Web</label>
+                        <input 
+                            type="email" 
+                            className="form-control" 
+                            id="webInputId" 
+                            placeholder="name@example.com"
+                            value={ dProveedor?.sitio_web }
+                        />
+                        <label htmlFor="webInputId">Página Web</label>
                     </div>
                 </div>
             </div>
@@ -120,11 +171,6 @@ export const ProveedorInfo = () => {
                     headers={ ['Documento', 'Tipo'] }
                     body={ [
                             {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'},
-                            // {document:'holis.pdf', type:'pdf', nota:'Nota de la esa madre muajaja'}
                         ] }
                 />
             </div>
@@ -132,7 +178,9 @@ export const ProveedorInfo = () => {
                 <CardGeneral
                         title="Dirección"
                     >
-                        <DireccionComponent />
+                        <DireccionComponent 
+                            direccion={ domicilio }
+                        />
                 </CardGeneral>
             </div>
         </div>
@@ -144,35 +192,16 @@ export const ProveedorInfo = () => {
                     classBody={{ height: '135px' }}
                     title="Representantes"
                     headers={ ['Representantes', 'Tipo'] }
-                    body={ [
-                        {document:'Juacinto Ibarra de la Barrera', type:'Vendedor', nota:"La nota muajaja"},
-                        {document:'Juan Gabriel Gonzalez Gonzalez', type:'Vendedor'},
-                        {document:'Rogelio Rojas del Rosal', type:'Legal'},
-                        {document:'Sancho Panza Quijotence ', type:'Legal'}
-                    ] }
+                    body={ representantes?.map( r => {
+                        return {
+                            id: r.iddatos_proveedores,
+                            detalle: r.nombre,
+                            nota: "",
+                            tipo: r.tipo_representante,
+                            activo: r.activo
+                        }
+                    }) }
                 />
-                {/* <CardGeneral
-                    title="Representantes"
-                >
-                    <div style={{
-                        display: 'flex',
-                        justifyContent: 'flex-end'
-                    }}>
-
-                        <button type="button" className="btn btn-success">Nuevo</button>
-                    </div>
-                    <TableDocumentsComponent
-                        key={'representantes '}
-                        classBody={{ height: '135px' }}
-                        headers={ ['Representantes', 'Tipo'] }
-                        body={ [
-                            {document:'Juacinto Ibarra de la Barrera', type:'Vendedor'},
-                            {document:'Juan Gabriel Gonzalez Gonzalez', type:'Vendedor'},
-                            {document:'Rogelio Rojas del Rosal', type:'Legal'},
-                            {document:'Sancho Panza Quijotence ', type:'Legal'}
-                        ] }
-                    />
-                </CardGeneral> */}
             </div>
 
             <div className="col-md-6">
@@ -180,36 +209,17 @@ export const ProveedorInfo = () => {
                     key={'contacto '}
                     classBody={{ height: '135px' }}
                     title="Contacto"
-                    headers={ ['Representantes', 'Tipo'] }
-                    body={ [
-                        {document:'55-70-22-34-55', type:'Telefono', nota:"Nota del telefono"},
-                        {document:'javier@gmail.com', type:'email'},
-                        {document:'55-32-44-35', type:'Fax'},
-                        {document:'55-33-24-35', type:'Beeper'}
-                    ] }
+                    headers={ ['Contacto', 'Tipo'] }
+                    body={ contactos?.map( r => {
+                        return {
+                            id: r.iddatos_proveedores_contacto,
+                            detalle: r.detalle_contacto,
+                            nota: r.notas,
+                            tipo: r.descripcion_contacto,
+                            activo: r.activo
+                        }
+                    }) }
                 />
-                {/* <CardGeneral
-                    title="Contacto"
-                >
-                    <div style={{
-                        display: 'flex',
-                        justifyContent: 'flex-end'
-                    }}>
-
-                        <button type="button" className="btn btn-success">Nuevo</button>
-                    </div>
-                    <TableDocumentsComponent
-                        key={'contactos'}
-                        classBody={{ height: '135px' }}
-                        headers={ ['Contacto', 'Tipo'] }
-                        body={ [
-                                {document:'55-70-22-34-55', type:'Telefono'},
-                                {document:'javier@gmail.com', type:'email'},
-                                {document:'55-32-44-35', type:'Fax'},
-                                {document:'55-33-24-35', type:'Beeper'}
-                            ] }
-                    />
-                </CardGeneral> */}
             </div>
         </div>
 
@@ -219,7 +229,9 @@ export const ProveedorInfo = () => {
                     title='Inactivar'
                     className='cardGeneral-red'
                 >
-                    <InactivarSectionComponent />
+                    <InactivarSectionComponent
+                        initialValue={ inactivo }
+                    />
                 </CardGeneral>
             </div>
         </div>

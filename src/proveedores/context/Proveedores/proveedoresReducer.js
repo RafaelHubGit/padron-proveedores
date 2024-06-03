@@ -14,6 +14,21 @@ export const proveedoresReducer = ( state= {}, action ) => {
                 ...state,
                 proveedor: action.payload
             }
+
+        case types.setGirosComerciales:
+            return {
+                ...state,
+                girosComerciales: action.payload
+            }
+        
+        case types.setEstadosProveedores:
+            return {
+                ...state,
+                estadosProveedores: action.payload
+            }
+
+        default:
+            return state;
     } 
 
 }

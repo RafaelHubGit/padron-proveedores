@@ -3,18 +3,16 @@ import { InputSearch } from '../../../generalComponents/InputSearch';
 import { ProveedorTable } from './ProveedorTable';
 import { GeneralContext } from '../../context/General/GeneralContext';
 import useDivHeight from '../../hooks/useDivHeight';
-import { ProveedoresContext } from '../../context/Proveedores/ProveedoresContext';
 import { useNavigate } from 'react-router-dom';
 import useFetch from '../../../hooks/useFetch';
 import ENDPOINTS from '../../../config/urls';
 import Swal from 'sweetalert2';
 import { showToast } from '../../../generalComponents/showToast';
 
-const pageSize = 200;
+const pageSize = 500;
 
 export const ProveedoresSearch = () => {
     const navigate = useNavigate();
-    const { selectedProveedor } = useContext(ProveedoresContext);
     const [proveedores, setProveedores] = useState([]);
     const [searchContainerRef, searchContainerHeight] = useDivHeight();
     const [searchText, setSearchText] = useState('');
@@ -42,7 +40,12 @@ export const ProveedoresSearch = () => {
     useEffect(() => {
         if (!loading && data && !searchText) {
             // setProveedores( [...proveedores, ...data] );
-            setProveedores(prevProveedores => prevProveedores.concat(data));
+            setProveedores(prevProveedores => prevProveedores.concat( data.map( d => { 
+                                                                                return { 
+                                                                                    ...d, 
+                                                                                    activo : d.activo == "Activo" ? 1 : 0  
+                                                                                }
+                                                                            })));
             showToast(`${proveedores.length} Mostrados`, "info");
             if (data.length < pageSize) {
                 setHasMore(false);
@@ -115,14 +118,11 @@ export const ProveedoresSearch = () => {
     };
 
     const handleProveedorSelected = (proveedor) => {
-        selectedProveedor(proveedor);
-        navigate(`/home/detalle`);
+        navigate(`/home/detalle/${proveedor.numeroProveedor}/proveedorInfo`);
     };
 
     const fetchMoreData = () => {
-        // if (!searchText) {
-            setPage(prevPage => prevPage + 1);
-        // }
+        setPage(prevPage => prevPage + 1);
     };
 
     return (

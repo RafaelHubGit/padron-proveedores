@@ -5,35 +5,39 @@ import 'react-datetime-picker/dist/DateTimePicker.css';
 import 'react-calendar/dist/Calendar.css';
 // import './dateTimePicker.css';
 
-export const DateTimePickerComponent = ({ titulo = "", setDate }) => {
+export const DateTimePickerComponent = ({ titulo = "", setDate, disabled = false, initialValue }) => {
+  // Usar initialValue como estado inicial
+  const [value, setValue] = useState( initialValue );
 
-    const [value, onChange] = useState(new Date());
+  // Efecto para comunicar cambios al componente padre
+  useEffect(() => {
+    setDate(value);
+  }, [value, setDate]);
 
-    useEffect(() => {
-      setDate( value );
-    }, [value, setDate])
-    
-
-    onHandleValue => {
-      
-    }
+  useEffect(() => {
+    setValue( initialValue );
+  }, [initialValue])
   
 
+  const handleChange = (newValue) => {
+      setValue(newValue);
+  };
+
   return (
-    <div className="date-picker-container">
-      <div className='text'>
-        <p> { titulo } </p>
+      <div className="date-picker-container">
+        <div className='text'>
+          <p> { titulo } </p>
+        </div>
+        <DateTimePicker 
+              calendarAriaLabel="Toggle calendar"
+              onChange={handleChange} 
+              disableClock={true}
+              disabled={disabled}
+              format="dd/MM/yyyy"
+              clearIcon={null}
+              calendarIcon={<i className="material-icons">calendar_month</i>}
+              className="my-custom-date-picker"
+              value={value} />
       </div>
-      <DateTimePicker 
-            calendarAriaLabel="Toggle calendar"
-            onChange={onChange} 
-            disableClock={true}
-            format="dd/MM/yyyy"
-            clearIcon={null}
-            calendarIcon={<i className="material-icons">calendar_month</i>}
-            className="my-custom-date-picker"
-            value={value} />
-     
-    </div>
   );
 };

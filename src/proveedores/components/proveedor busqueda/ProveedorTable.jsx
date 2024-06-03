@@ -3,6 +3,8 @@ import { GeneralContext } from '../../context/General/GeneralContext';
 import useDivHeight from '../../hooks/useDivHeight';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
+import 'animate.css';
+
 export const ProveedorTable = ({ proveedores = [], handleProveedorSelected, fetchMoreData, hasMore, pageSize = 10 }) => {
     const [tBodyHeight, setTBodyHeight] = useState(0)
     const [tHeadRef, tHeadHeight] = useDivHeight();
@@ -26,7 +28,7 @@ export const ProveedorTable = ({ proveedores = [], handleProveedorSelected, fetc
                         <th scope="col">RFC</th>
                         <th scope="col">Razón Social</th>
                         <th scope="col">Activo</th>
-                        <th scope="col">Justificación</th>
+                        {/* <th scope="col">Justificación</th> */}
                     </tr>
                 </thead>
                 <tbody id="scrollableTbody" className='table-group-divider' style={{ height: `calc(85vh - ${tBodyHeight}px)`, overflow: 'auto' }}>
@@ -46,9 +48,10 @@ export const ProveedorTable = ({ proveedores = [], handleProveedorSelected, fetc
                     >
                         {proveedores.map(p => (
                             <tr
-                                key={p.idProveedor}
+                                // key={p.iddatosProveedores}
                                 onDoubleClick={() => handleRowClick(p)}
                                 style={{ cursor: 'pointer' }}
+                                className="fadeIn"
                             >
                                 <th scope="row"> {p.numeroProveedor} </th>
                                 <td> {p.rfc} </td>
@@ -61,7 +64,7 @@ export const ProveedorTable = ({ proveedores = [], handleProveedorSelected, fetc
                                             <span className="badge text-bg-danger">Inactivo</span>
                                     }
                                 </td>
-                                <td>  </td>
+                                {/* <td>  </td> */}
                             </tr>
                         ))}
                     </InfiniteScroll>

@@ -21,11 +21,26 @@ export const ProveedoresProvider = ({ children }) => {
         })
     }
 
+    const setGirosComerciales = ( giroC ) => {
+        dispatch({
+            type: types.setGirosComerciales,
+            payload: giroC
+        })
+    }
+
+    const setEstadosProveedores = ( estadoP ) => {
+        dispatch({
+            type: types.setEstadosProveedores,
+            payload: estadoP
+        })
+    } 
   return (
     <ProveedoresContext.Provider value={{
             ...state,
             selectedProveedor,
-            setProveedor
+            setProveedor,
+            setGirosComerciales,
+            setEstadosProveedores
         }} >
         { children }
     </ProveedoresContext.Provider>

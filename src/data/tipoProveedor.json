@@ -1,0 +1,7 @@
+{
+    "tipoProveedor": [
+        { "value": "C", "label": "Compra" },
+        { "value": "F", "label": "Fondo Revolvente " },
+        { "value": "I", "label": "Indefinido" }
+    ]
+}

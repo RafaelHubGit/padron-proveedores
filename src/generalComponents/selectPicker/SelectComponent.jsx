@@ -1,64 +1,70 @@
-import React, { useState } from 'react'
-import Select from 'react-select'
-
+import React, { useState, useMemo, useEffect } from 'react';
+import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 
-export const SelectComponent = ( { options, showSelected = false, title = 'no title', ...props }) => {
+export const SelectComponent = ({ options, initialValue = [], title = 'no title', isDisabled = false, isMulti = false, showSelected = false,  ...props }) => {
+    const animatedComponents = makeAnimated();
 
-    // const options = [
-    //     { value: 'chocolate', label: 'Chocolate' },
-    //     { value: 'strawberry', label: 'Strawberry' },
-    //     { value: 'vanilla', label: 'Vanilla' }
-    //   ]
+    // Asegura que options es un array y contiene elementos antes de intentar encontrar valores iniciales
+    // const initialOptions = useMemo(() => {
+    //     if (Array.isArray(options) && options.length > 0) {
+    //         return isMulti ?
+    //             options.filter(option => Array.isArray(initialValue) && initialValue.includes(option.value)) :
+    //             options.find(option => option.value === initialValue);
+    //     }
+    //     return isMulti ? [] : null;
+    // }, [initialValue]);
 
-  const [selectedOption, setSelectedOption] = useState([]);
+    useEffect(() => {
+      if (Array.isArray(options) && options.length > 0) {
+          const selected =  isMulti ?
+              options.filter(option => Array.isArray(initialValue) && initialValue.includes(option.value)) :
+              options.find(option => option.value === initialValue);
 
-  const animatedComponents = makeAnimated();
+          setSelectedValue( selected );
+      }
+    }, [initialValue])
+    
+    
 
-  const handleChange = (selectedOption) => {
-    if (Array.isArray(selectedOption)) {
-      setSelectedOption(selectedOption.map(option => option.value));
-      console.log(selectedOption.map(option => option.value));
-    } else if (selectedOption) {
-      setSelectedOption([selectedOption.value]);
-      console.log(selectedOption.value);
-    } else {
-      setSelectedOption([]);
-    }
-  };
+    const [selectedValue, setSelectedValue] = useState([]);
 
-  return (
-    <div className='select-container'>
-        <div className="text-wrap">
-          <p>
-            { title }
-          </p>
+    const handleChange = (selectedOptions) => {
+        setSelectedValue(selectedOptions || (isMulti ? [] : null));
+    };
+
+    return (
+        <div className='select-container'>
+            <div className="text-wrap">
+                <p>{title}</p>
+            </div>
+            <div className='select-wrap'>
+                <Select 
+                    options={options}
+                    value={selectedValue}
+                    onChange={handleChange}
+                    components={animatedComponents}
+                    isDisabled={isDisabled}
+                    isMulti={isMulti}
+                    {...props}
+                />
+            </div>
+
+            <div className='downText'>
+              {
+                !showSelected ? '' : 
+                  isMulti
+                  ? <div className='down-text-wrap'> 
+                      <div>
+                        { selectedValue.map(option => option.label).join(', ') } 
+                      </div>
+                      <div>
+                        Seleccionados: { selectedValue.length }
+                      </div>
+                    </div> 
+                  : null
+              }
+            </div>
         </div>
-        <div className='select-wrap'>
-          <Select 
-            options={options} 
-            { ...props }
-            onChange={handleChange}
-            components={animatedComponents}
-          />
-        </div>
-
-      <div className='downText'>
-        {
-          !showSelected ? '' : 
-            selectedOption && selectedOption.length > 0
-            ? <div className='down-text-wrap'> 
-                <div>
-                  { selectedOption.map(option => option).join(', ') } 
-                </div>
-                {/* <div>
-                  Seleccionados: { selectedOption.length }
-                </div> */}
-              </div> 
-            : null
-        }
-      </div>
-
-    </div>
-  )
-}
+    );
+};

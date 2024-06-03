@@ -42,12 +42,6 @@ export const ProveedoresSearch = () => {
     useEffect(() => {
         if (!loading && data && !searchText) {
             setProveedores( data );
-            // setProveedores(prevProveedores => {
-            //     const newProveedores = data.filter(newProveedor => 
-            //         !prevProveedores.some(prevProveedor => prevProveedor.idProveedor === newProveedor.idProveedor)
-            //     );
-            //     return page === 1 ? newProveedores : [...prevProveedores, ...newProveedores];
-            // });
             if (data.length < pageSize) {
                 setHasMore(false);
             } else {
@@ -120,14 +114,6 @@ export const ProveedoresSearch = () => {
                         <button type="button" className="btn btn-success w-100">Nuevo</button>
                     </div>
                 </div>
-
-                {/* <InfiniteScroll
-                    dataLength={proveedores.length}
-                    next={fetchMoreData}
-                    hasMore={hasMore}
-                    loader={<h4>Loading...</h4>}
-                    endMessage={<p>No more data to load</p>}
-                > */}
                     <ProveedorTable
                         proveedores={proveedores}
                         handleProveedorSelected={handleProveedorSelected}
@@ -135,7 +121,6 @@ export const ProveedoresSearch = () => {
                         hasMore={hasMore}
                         pageSize={pageSize}
                     />
-                {/* </InfiniteScroll> */}
             </div>
         </div>
     );

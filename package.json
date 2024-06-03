@@ -13,6 +13,7 @@
     "@azure/msal-browser": "^3.14.0",
     "@azure/msal-react": "^2.0.16",
     "@popperjs/core": "^2.11.8",
+    "animate.css": "^4.1.1",
     "mdb-react-ui-kit": "^8.0.0",
     "react": "^18.2.0",
     "react-datetime-picker": "^6.0.1",

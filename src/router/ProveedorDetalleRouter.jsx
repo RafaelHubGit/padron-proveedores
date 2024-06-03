@@ -10,7 +10,8 @@ export const ProveedorDetalleRouter = () => {
             <Route path="proveedorInfo" element={<ProveedorInfo />} />
             {/* <Route path="proveedorInfo" element={<VisualizaProveedorComponent />} /> */}
             <Route path="refrendos" element={<Refrendos />} />
-            <Route path="/" element={<Navigate to="proveedorInfo" />} />
+            <Route path="/" element={<Navigate replace to="proveedorInfo" />} />
+            {/* <Route path="/" element={<Navigate to="proveedorInfo" />} /> */}
         </Routes>
     </>
   )

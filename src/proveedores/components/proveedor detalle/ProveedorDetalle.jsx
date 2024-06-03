@@ -1,33 +1,59 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ProveedorDetalleRouter } from '../../../router/ProveedorDetalleRouter'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { ProveedoresContext } from '../../context/Proveedores/ProveedoresContext'
 import { getProveedorById } from '../../helpers/dataJsonFnc'
+import ENDPOINTS from '../../../config/urls'
+import useFetch from '../../../hooks/useFetch'
 
 
 export const ProveedorDetalle = () => {
 
-    // const { proveedorSelected, setProveedor } = useContext( ProveedoresContext )
-    // const [proveedor, setProveedorState] = useState({})
+    const { id } = useParams();
+
+    const { data: proveedorData, loading: ProveedorLoading, error: ProveedorError } = useFetch( ENDPOINTS.GETPROVEEDORDATA( id ) );
+    const { data: girosCData, loading: girosCLoading, error: girosCError } = useFetch( ENDPOINTS.GETGIROSCOMERCIALES() );
+    const { data: estadoPData, loading: estadoPLoading, error: estadoPError } = useFetch( ENDPOINTS.ESTADOSPROVEEDORES() );
+
+    const { proveedorSelected, setProveedor } = useContext( ProveedoresContext );
+    const { setGirosComerciales, setEstadosProveedores } = useContext( ProveedoresContext );
+
+    const [proveedor, setProveedorState] = useState({});
+    const [dProveedor, setDProveedor] = useState({})
+    const [refrendo, setRefrendo] = useState("N/A")
     const navigate = useNavigate();
-    const location = useLocation();
+    const location = useLocation();    
+    useEffect(() => {
+        if ( !proveedorData.length ){
+            return 
+        }
 
-    // useEffect(() => {
-    //     const PROVEEDOR = getProveedorById( proveedorSelected.idProveedor );
-    //     setProveedor( PROVEEDOR );
-    //     setProveedorState( PROVEEDOR )
-    // }, [proveedorSelected])
+        const PROVEEDOR = proveedorData[0].Proveedores[0];
+        setProveedor( PROVEEDOR );
+        setProveedorState( PROVEEDOR );
+        const DPROVEEDOR = PROVEEDOR.DatosProveedores.find( dp => dp.activo == 1 );
+        setDProveedor( DPROVEEDOR );
 
-    // useEffect(() => {
-    // //   console.log('EL RPROVEEDOR  : ', proveedor);
-    // }, [proveedor])
+        const REFRENDO = DPROVEEDOR.Refrendo?.find( r => r.idrefrendo == DPROVEEDOR.idrefrendo )?.numero_refrendo || "N/A";
+        setRefrendo( REFRENDO );
+
+
+        console.log("proveedorSelected ; ", proveedorSelected);
+
+    }, [proveedorData, ProveedorLoading])
     
-    
+    useEffect(() => {
+        setGirosComerciales( girosCData );
+    }, [girosCData])
+
+    useEffect( () => {
+        setEstadosProveedores( estadoPData );
+    }, [estadoPData])
     
     
 
     const handleBack = () => {
-        navigate(`/home/busqueda`);
+        navigate(-1);
     }
 
   return (
@@ -43,28 +69,43 @@ export const ProveedorDetalle = () => {
                 </span>
             </div>
             <div className='save-button'>
-                <button type="button" className="btn btn-success"> Guardar </button>
+                {
+                    proveedor?.activo === 1 ? 
+                    <button type="button" className="btn btn-success"> Guardar </button>
+                    : ""
+                }
             </div>
         </div>
 
-        <div className='header-container mb-4'>
-            <div className='proveedor-data'>
-                {/* <p className='nombre-proveedor'> { proveedor.razon_social } </p>
-                <p className='rfc'> RFC: { proveedor.rfc } </p> */}
-                <p className='refrendo'>Refrendo: 3</p>
+        <div className='header-container mb-4' >
+            <div className={`proveedor-data ${!proveedor?.activo ? 'proveedor-data-red-text' : ''}`}>
+                <p className='nombre-proveedor'> { dProveedor.razon_social } </p>
+                <p className='rfc'> RFC: { dProveedor.rfc } </p>
+                <p className='refrendo'>Refrendo: { refrendo }</p>
             </div>
             <div className='proveedor-status'>
                 <div className='status-toggle mb-2'>
                     <div className="form-check form-switch custom-switch">
-                        <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <input
+                            className="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                            checked={proveedor?.activo === 1}  // Asumiendo que 'activo' es 1 o 0
+                            // onChange={handleCheckboxChange}  // Manejador para cambios en el checkbox
+                        />
                     </div>
                     <div>
-                        <span className="badge text-bg-success">Activo</span>
+                        {
+                            proveedor?.activo === 1 ? 
+                                (<span className="badge text-bg-success">Activo</span>)
+                                : (<span className="badge text-bg-danger">Inactivo</span>)
+                        }
                     </div>
                 </div>
-                <div className='inactive-detail-button'>
+                {/* <div className='inactive-detail-button'>
                     <button type="button" className="btn btn-danger"> Ver detalle inactividad </button>
-                </div>
+                </div> */}
             </div>
         </div>
 

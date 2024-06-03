@@ -52,15 +52,15 @@ export const TablaRepresentanteContactoComponent = ({ headers = [], body = [], t
                 </thead>
         
                 <tbody style={classBody}>
-                    {body.map(b => (
+                    {body?.map(b => (
                     <tr 
-                        key={b.document} 
-                        onDoubleClick={() => handleOption(b.document)}
+                        key={b.id} 
+                        onDoubleClick={() => handleOption(b)}
                         className='cursor-pointer'
                         data-bs-toggle="tooltip" data-bs-placement="top" title={b.nota ? b.nota : ""}
                     >
-                        <td>{b.document}</td>
-                        <td>{b.type}</td>
+                        <td>{b.detalle}</td>
+                        <td>{b.tipo}</td>
                     </tr>
                     ))}
                 </tbody>
