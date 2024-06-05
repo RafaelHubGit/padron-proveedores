@@ -4,7 +4,7 @@ import { types } from "../../types/types";
 export const proveedoresReducer = ( state= {}, action ) => {
 
     switch ( action.type ) {
-        case types.selectedProveedor:
+        case types.setProveedorSelected:
             return {
                 ...state,
                 proveedorSelected: action.payload

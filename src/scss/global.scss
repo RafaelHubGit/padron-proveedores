@@ -90,3 +90,23 @@ p{
 
 
 
+.inactivoInfo-wrap{
+    color: $primary-text;
+
+    .estado-proveedor{
+        font-size: 20px;
+    }
+    .fechas-container{
+        .fechas-wrap{
+            .fecha-text{
+                color: $primary-text;
+            }
+            .fecha-data{
+                color: $primary-text;
+            }
+        }
+    }
+    .observaciones{
+        color: $secondary-text;
+    }
+}

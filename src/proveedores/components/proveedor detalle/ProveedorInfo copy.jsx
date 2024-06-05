@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-
 import { DateTimePickerComponent } from '../../../generalComponents/dateTimePicker/DateTimePickerComponent';
 import { SubirDocumento } from '../../../generalComponents/SubirDocumento';
 import { SelectComponent } from '../../../generalComponents/selectPicker/SelectComponent';
@@ -14,9 +13,19 @@ export const ProveedorInfo = () => {
 
     const [value, onChange] = useState(new Date());
 
+
     const [selectedDate, setSelectedDate] = useState(null);
 
+
+    /**
+     * Handles the change of the selected date.
+     *
+     * @param {Date} date - The selected date.
+     * @returns {void}
+     */
     const handleDateChange = (date) => {
+        // crea un if, si esta null que no haga nada y si no que haga el set
+
         setSelectedDate(date);
         console.log("Selected date:", date);
     };

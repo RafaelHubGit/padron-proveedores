@@ -2,10 +2,8 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ProveedorDetalleRouter } from '../../../router/ProveedorDetalleRouter'
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { ProveedoresContext } from '../../context/Proveedores/ProveedoresContext'
-import { getProveedorById } from '../../helpers/dataJsonFnc'
 import ENDPOINTS from '../../../config/urls'
 import useFetch from '../../../hooks/useFetch'
-
 
 export const ProveedorDetalle = () => {
 
@@ -15,7 +13,7 @@ export const ProveedorDetalle = () => {
     const { data: girosCData, loading: girosCLoading, error: girosCError } = useFetch( ENDPOINTS.GETGIROSCOMERCIALES() );
     const { data: estadoPData, loading: estadoPLoading, error: estadoPError } = useFetch( ENDPOINTS.ESTADOSPROVEEDORES() );
 
-    const { proveedorSelected, setProveedor } = useContext( ProveedoresContext );
+    const { setProveedor, setProveedorSelected } = useContext( ProveedoresContext );
     const { setGirosComerciales, setEstadosProveedores } = useContext( ProveedoresContext );
 
     const [proveedor, setProveedorState] = useState({});
@@ -29,16 +27,15 @@ export const ProveedorDetalle = () => {
         }
 
         const PROVEEDOR = proveedorData[0].Proveedores[0];
+
         setProveedor( PROVEEDOR );
         setProveedorState( PROVEEDOR );
         const DPROVEEDOR = PROVEEDOR.DatosProveedores.find( dp => dp.activo == 1 );
+        setProveedorSelected(DPROVEEDOR);
         setDProveedor( DPROVEEDOR );
 
         const REFRENDO = DPROVEEDOR.Refrendo?.find( r => r.idrefrendo == DPROVEEDOR.idrefrendo )?.numero_refrendo || "N/A";
         setRefrendo( REFRENDO );
-
-
-        console.log("proveedorSelected ; ", proveedorSelected);
 
     }, [proveedorData, ProveedorLoading])
     
@@ -80,6 +77,7 @@ export const ProveedorDetalle = () => {
         <div className='header-container mb-4' >
             <div className={`proveedor-data ${!proveedor?.activo ? 'proveedor-data-red-text' : ''}`}>
                 <p className='nombre-proveedor'> { dProveedor.razon_social } </p>
+                <p className='numero-proveedor'> No. Proveedor: { proveedor?.numero_proveedor } </p>
                 <p className='rfc'> RFC: { dProveedor.rfc } </p>
                 <p className='refrendo'>Refrendo: { refrendo }</p>
             </div>

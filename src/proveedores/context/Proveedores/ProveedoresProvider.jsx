@@ -7,9 +7,9 @@ export const ProveedoresProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer( proveedoresReducer, {} );
 
-    const selectedProveedor = ( proveedor ) => {
+    const setProveedorSelected = ( proveedor ) => {
         dispatch({
-            type: types.selectedProveedor,
+            type: types.setProveedorSelected,
             payload: proveedor
         })
     }
@@ -37,7 +37,7 @@ export const ProveedoresProvider = ({ children }) => {
   return (
     <ProveedoresContext.Provider value={{
             ...state,
-            selectedProveedor,
+            setProveedorSelected,
             setProveedor,
             setGirosComerciales,
             setEstadosProveedores
